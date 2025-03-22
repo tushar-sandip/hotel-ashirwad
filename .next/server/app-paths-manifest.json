@@ -1,7 +1,8 @@
 {
-  "/event-details/page": "app/event-details/page.js",
+  "/page": "app/page.js",
   "/index-2/page": "app/index-2/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/event-details/page": "app/event-details/page.js",
   "/blog-details/page": "app/blog-details/page.js",
-  "/page": "app/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
