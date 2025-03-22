@@ -11,7 +11,7 @@ export default function Home() {
                     <div className="auto-container">
                         <div className="section_heading mb_40">
                         <span className="section_heading_title_small">Our location</span>
-                        <h2 className="section_heading_title_big">Hotel Ashirwad And Lodging</h2>
+                        <h2 className="section_heading_title_big">Hotel Ashirwad</h2>
                         </div>
                         <ul className="contact-info-1 d-flex flex-wrap mb_40">
                         <li>

@@ -11,10 +11,10 @@ export default function Footer1() {
                             <div className="col-lg-3 col-md-3 col-full text-center">
                                 <div className="logo">
                                     <Link href="/">
-                                        <img src="assets/images/ashootelFinalLogo.png" width={165} height={50} alt="Logo" />
+                                        <img src="assets/images/ashootelFinalLogo.png" width={130} height={50} alt="Logo" />
                                     </Link>
                                     <ul className="contact-widget-1-list">
-                                        <li className="fs_30 fw_bold">Hotel Ashirwad And Lodging</li>
+                                        <li className="fs_30 m_10  fw_bold">Hotel Ashirwad</li>
                                        
                                     </ul>
                                 </div>
