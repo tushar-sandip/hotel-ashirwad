@@ -1,4 +1,4 @@
-// File: D:\as-hotel-24-feature-develop\app\page.js
+// File: /Users/tusharphalke/Documents/2025_AS_LODGING/hotel-ashirwad/app/page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

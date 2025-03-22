@@ -19,8 +19,6 @@ export default function Menu() {
                         <li><Link href="/about-us">About</Link></li>
                         <li><Link href="/team">Team</Link></li>
                         <li><Link href="/testimonials">Testimonials</Link></li>
-                        <li><Link href="/faq">FAQ</Link></li>
-                        <li><Link href="/not-found">404 Error Page</Link></li>
                     </ul>
                 </li>
                 <li className="dropdown"><Link href="#">Pages</Link>
@@ -28,7 +26,6 @@ export default function Menu() {
                         
                         <li><Link href="/food-menu">Manu</Link></li>
                         <li><Link href="/gallery">Gallery</Link></li>
-                        <li><Link href="/spa-&-wellness">Spa & Wellness</Link></li>
                         <li><Link href="/amenities">Amenities</Link></li>
                         
                         <li className="dropdown"><Link href="#">Events</Link>
@@ -52,12 +49,7 @@ export default function Menu() {
                         <li><Link href="/room-details">Room Details</Link></li>
                     </ul>
                 </li>
-                <li className="dropdown"><Link href="#">Blog</Link>
-                    <ul>
-                        <li><Link href="/blog">Blog Grid</Link></li>
-                        <li><Link href="/blog-2">Blog Standard</Link></li>
-                        <li><Link href="/blog-details">Blog Details</Link></li>
-                    </ul>
+                <li><Link href="/blog-details">Blog</Link>
                 </li> 
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
