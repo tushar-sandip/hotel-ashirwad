@@ -2,6 +2,7 @@
 
 
 export default function Hotel_booking() {
+  
     return (
         <>
            
