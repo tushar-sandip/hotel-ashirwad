@@ -1940,7 +1940,7 @@ button.theme-btn.search-toggler:hover {
 /* footer style */
 .footer-1-middle {
     position: relative;
-    padding: 120px 0 60px;
+    padding: 10px 0 5px;
     background: #252638;
 }
 
@@ -2004,7 +2004,7 @@ ul.contact-widget-1-list li span {
     position: relative;
     background: #202130;
     text-align: center;
-    padding: 31px 0;
+    padding: 20px 0;
     color: #BEBEC3;
 }
 

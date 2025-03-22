@@ -13,7 +13,7 @@ export default function Home() {
         key: 1,
     })
 
-    
+
     const handleToggle = (key) => {
         if (isActive.key === key) {
             setIsActive({
@@ -28,7 +28,7 @@ export default function Home() {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="About Us">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="About Us">
                 <section className="section-padding">
                 <div className="auto-container">
                     <div className="row align-items-center">

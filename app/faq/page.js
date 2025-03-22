@@ -22,7 +22,7 @@ export default function Home() {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Frequently Asked Questions">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Frequently Asked Questions">
                 <section className="section-padding">
                     <div className="auto-container">
                       <div className="section_heading text-center mb_55">

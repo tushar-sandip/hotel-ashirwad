@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Special Packages">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Special Packages">
             
     <section className="section-padding">
       <div className="auto-container">

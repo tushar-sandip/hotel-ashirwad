@@ -41,7 +41,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <div className="logo-box">
                             <div className="logo">
                             <Link href="/">
-                            <img src="assets/images/ashootel.jpeg" width={50} height={50}  alt="" />
+                            <img src="assets/images/ashootel.jpeg" width={70} height={50}  alt="" />
                             </Link>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <div className="logo-box">
                             <div className="logo">
                                 <Link href="/">
-                                <img src="assets/images/ashootel.jpeg" width={50} height={50}  alt="" />
+                                <img src="assets/images/ashootel.jpeg" width={70} height={50}  alt="" />
                                 </Link>
                             </div>
                             </div>

@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Team Details">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Team Details">
             <section className="team-details p_relative">
                 <div className="auto-container">
                     <div className="team-details-content mb_90">

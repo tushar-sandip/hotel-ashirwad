@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Our Chef">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Our Chef">
                 <div>
                 
                 <section className="section-padding">

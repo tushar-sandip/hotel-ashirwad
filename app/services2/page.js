@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Our services">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Our services">
                 <div>
                 {/* service-section */}
                 <section className="service-section p_relative centred sec-pad">

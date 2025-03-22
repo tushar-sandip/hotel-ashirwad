@@ -6,7 +6,7 @@ export default function Error404() {
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="404 Page">    
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="404 Page">    
             <section className="section-padding">
                 <div className="auto-container">
                     <div className="content text-center">
