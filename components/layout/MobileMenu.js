@@ -46,7 +46,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             >
               <ul className="navigation clearfix">
                 
-                <li><Link href="/index-2" onClick={handleMobileMenu}>Home</Link></li>
+                <li><Link href="/" onClick={handleMobileMenu}>Home</Link></li>
 
                 <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}>
                   <Link href="/#" onClick={handleMobileMenu}>About</Link>

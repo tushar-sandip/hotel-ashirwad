@@ -1,33 +1,32 @@
-import Layout from "@/components/layout/Layout"
-import About from "@/components/sections/home2/About"
-import Room from "@/components/sections/home2/Room"
-import Amenities from "@/components/sections/home3/Amenities"
-import Cta from "@/components/sections/home3/Cta"
-import Blog from "@/components/sections/home1/Blog"
-import Contact_form from "@/components/sections/home1/Contact_form"
-import Banner from "@/components/sections/home3/Banner"
-import Projects from "@/components/sections/home1/Projects"
-import Features from "@/components/sections/home1/Features"
-import Testimonial from "@/components/sections/home1/Testimonial"
-
+import Layout from "@/components/layout/Layout";
+import About from "@/components/sections/home2/About";
+import Banner from "@/components/sections/home2/Banner";
+import Features from "@/components/sections/home2/Features";
+import Amenities from "@/components/sections/home2/Amenities";
+import Funfacts from "@/components/sections/home2/Funfacts";
+import Offer from "@/components/sections/home2/Offer";
+import Video from "@/components/sections/home2/Video";
+import Hotel_booking from "@/components/sections/home2/Hotel_booking";
+import Blog from "@/components/sections/home2/Blog";
+import Room from "@/components/sections/home2/Room";
+import Testimonial from "@/components/sections/home2/Testimonial";
 
 export default function Home() {
-
-    return (
-        <>
-            <Layout headerStyle={3} footerStyle={1}>
-                <Banner />
-                {/* <Booking /> */}
-                <Features />
-                <About />
-                <Room />
-                <Projects />
-                <Amenities />
-                <Testimonial />
-                <Cta />
-                <Blog />
-                <Contact_form />
-            </Layout>
-        </>
-    )
+  return (
+    <>
+      <Layout headerStyle={3} footerStyle={1}>
+        <Banner />
+        <About />
+        <Features />
+        <Room />
+        <Amenities />
+        <Funfacts />
+        <Offer />
+        <Video />
+        <Testimonial />
+        <Hotel_booking />
+        <Blog />
+      </Layout>
+    </>
+  );
 }

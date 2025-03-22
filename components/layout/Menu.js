@@ -7,7 +7,7 @@ export default function Menu() {
     return (
         <>
             <ul className="navigation clearfix">
-                <li> <Link href="/index-2">Home</Link>
+                <li> <Link href="/">Home</Link>
                     {/* <ul>
                         <li><Link href="/">Home Page 01</Link></li>
                         <li><Link href="/index-2">Home Page 02</Link></li>
