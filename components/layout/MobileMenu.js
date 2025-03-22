@@ -35,8 +35,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
         <nav className="menu-box">
           <div className="nav-logo">
             <Link href="/">
-              <img  src="assets/images/ashootelFinalLogo.png" alt="" />
+              <img  src="assets/images/ashootelFinalLogo.png" width={80} height={80} alt="" />
             </Link>
+            <span className="hotel-name fs_18 color_light fw_exbold border_bottom">Hotel Ashirwad</span> {/* Added hotel name here */}
           </div>
           <div className="menu-outer">
             <div
@@ -44,15 +45,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
               id="navbarSupportedContent"
             >
               <ul className="navigation clearfix">
-                <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}>
-                  <Link href="/" onClick={handleMobileMenu}>Home</Link>
-                  <ul style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                    <li><Link href="/" onClick={handleMobileMenu}>Home Page 01</Link></li>
-                    <li className="current" onClick={handleMobileMenu}><Link href="/index-2">Home Page 02</Link></li>
-                    <li><Link href="/index-3" onClick={handleMobileMenu}>Home Page 03</Link></li>
-                  </ul>
-                  <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fa fa-angle-right" /></div>
-                </li>
+                
+                <li><Link href="/index-2" onClick={handleMobileMenu}>Home</Link></li>
+
                 <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}>
                   <Link href="/#" onClick={handleMobileMenu}>About</Link>
                   <ul style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>

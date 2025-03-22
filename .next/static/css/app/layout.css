@@ -12474,6 +12474,9 @@ color
 .color_dark {
     color: #212529;
 }
+.color_name_black {
+    color: #2C2A49;
+}
 /* 
 el_02 
 background
@@ -24710,9 +24713,9 @@ ul.header-top-1-contact-info li a:hover {
 }
 .mobile-menu .nav-logo {
 	position: relative;
-	padding: 30px 25px;
+	padding: 5px 25px;
 	text-align: left;
-	margin-bottom: 100px;
+	margin-bottom: 1px;
 	margin-top: 25px;
 }
 .mobile-menu-visible {

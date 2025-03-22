@@ -38,11 +38,12 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <div className="header-upper">
                     <div className="auto-container">
                         <div className="inner-container d-flex align-items-center justify-content-between">
-                        <div className="logo-box">
+                        <div>
                             <div className="logo">
                             <Link href="/">
                             <img src="assets/images/ashootel.jpeg" width={70} height={50}  alt="" />
                             </Link>
+                            <span className="hotel-name fs_25 m_6  mx_15 color_name_black fw_exbold">Hotel Ashirwad</span>
                             </div>
                         </div>
                         <div className="middle-column">
@@ -79,11 +80,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <div className="auto-container">
                         <div className="inner-container d-flex align-items-center justify-content-between">
                             {/* Logo */}
-                            <div className="logo-box">
+                            <div className="">
                             <div className="logo">
                                 <Link href="/">
                                 <img src="assets/images/ashootel.jpeg" width={70} height={50}  alt="" />
                                 </Link>
+                            <span className="hotel-name fs_25 m_6  mx_15 color_name_black fw_exbold">Hotel Ashirwad</span>
+
                             </div>
                             </div>
                             <div className="middle-column">
