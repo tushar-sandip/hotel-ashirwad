@@ -2,6 +2,6 @@
   "/page": "app/page.js",
   "/event-details/page": "app/event-details/page.js",
   "/index-2/page": "app/index-2/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/blog-details/page": "app/blog-details/page.js"
+  "/blog-details/page": "app/blog-details/page.js",
+  "/contact/page": "app/contact/page.js"
 }

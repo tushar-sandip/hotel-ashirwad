@@ -35,7 +35,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
         <nav className="menu-box">
           <div className="nav-logo">
             <Link href="/">
-              <img  src="assets/images/ashootel.jpeg" alt="" />
+              <img  src="assets/images/ashootelFinalLogo.png" alt="" />
             </Link>
           </div>
           <div className="menu-outer">
