@@ -49,7 +49,7 @@ export default function Menu() {
                         <li><Link href="/room-details">Room Details</Link></li>
                     </ul>
                 </li>
-                <li><Link href="/blog-details">Blog</Link>
+                <li><Link href="/gallery">Gallery</Link>
                 </li> 
                 <li><Link href="/contact">Contact</Link></li>
             </ul>

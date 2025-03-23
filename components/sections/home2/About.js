@@ -9,7 +9,7 @@ export default function About() {
                     <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="section_heading mb_20">
-                        <span className="section_heading_title_small">About Royalking</span>
+                        <span className="section_heading_title_small">About Hotel Ashirwad</span>
                         <h2 className="section_heading_title_big">Luxury <br /> Hotel in The Heart of <br /> San Francisco.</h2>
                         </div>
                         <p className="aboout-1-desc mb_30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer

@@ -88,7 +88,7 @@ export default function TestimonialSlider2() {
                     <h4 className="testimonial-1-name">Ralph Edwards</h4>
                     <p className="testimonial-1-designation">Manager</p>
                     <div className="testimonial-1-author-thumb">
-                        <img src="assets/images/resource/testimonial-3.jpg" alt="" />
+                        <img src="assets/images/icons/avatar.jpg" alt="" />
                     </div>
                     </div>
                 </SwiperSlide>

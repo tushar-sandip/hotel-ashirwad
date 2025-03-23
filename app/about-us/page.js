@@ -1,11 +1,11 @@
 'use client'
-import TestimonialSlider2 from '@/components/slider/TestimonialSlider2'
 import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from 'react'
 import ReactCurvedText from 'react-curved-text'
 import ModalVideo from 'react-modal-video'
+import TestimonialSlider7 from '@/components/slider/TestimonialSlider7'
 export default function Home() {
     const [isOpen, setOpen] = useState(false)
     const [isActive, setIsActive] = useState({
@@ -34,13 +34,11 @@ export default function Home() {
                     <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="section_heading mb_20">
-                        <span className="section_heading_title_small">About Royalking</span>
-                        <h2 className="section_heading_title_big">Luxury <br /> Hotel in The Heart of <br /> San Francisco.</h2>
+                        <span className="section_heading_title_small">About Hotel Ashirwad</span>
+                        <h2 className="section_heading_title_big"> A Journey Through  <br />  Spiritual Bliss<br /> Natural Beauty.</h2>
                         </div>
-                        <p className="aboout-1-desc mb_30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer
-                        ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae orci sodales
-                        Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis
-                        amet odio est. Sit semper et velit fusce.</p>
+                       
+                        <p className="aboout-1-desc mb_30">Nestled along the scenic Manchar-Bhimashankar Road, Hotel Ashirwad & Lodging offers a tranquil retreat in the heart of Bhimashankar. Whether you're visiting for spiritual reflection, relaxation, or business, our hotel provides a comfortable and budget-friendly stay for all travelers. Conveniently located just a short distance from the revered Bhimashankar Temple, our hotel is the ideal choice for both devotees and tourists alike.</p>
                         <div className="about-1-btn mb_30">
                         <Link href="/about" className="btn-1">Discover More<span></span></Link>
                         </div>
@@ -135,7 +133,7 @@ export default function Home() {
                         <div className="testimonial-1-shape-1"><img src="assets/images/shape/pattern-1.png" alt="" /></div>
                         <div className="content-box">
                             {/*Theme Carousel*/}
-                            <TestimonialSlider2 />                        
+                            <TestimonialSlider7 />                        
                         </div>
                         </div>
                     </div>
@@ -194,18 +192,8 @@ export default function Home() {
                                 <p className="fw_500">Breakfast</p>
                             </div>
                         </div>
-                        <div className="col_xl_five col-lg-3 col-md-6">
-                            <div className="icon_box-1">
-                                <div className="icon_box-1-icon"><i className="icon-15"></i></div>
-                                <p className="fw_500">Spa & Wellness</p>
-                            </div>
-                        </div>
-                        <div className="col_xl_five col-lg-3 col-md-6">
-                            <div className="icon_box-1">
-                                <div className="icon_box-1-icon"><i className="icon-16"></i></div>
-                                <p className="fw_500">Meeting Room</p>
-                            </div>
-                        </div>
+                       
+                        
                         <div className="col_xl_five col-lg-3 col-md-6">
                             <div className="icon_box-1">
                                 <div className="icon_box-1-icon"><i className="icon-17"></i></div>

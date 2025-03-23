@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Gallery">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Gallery">
                 <section className="section-padding">
                     <div className="auto-container">
                         <div className="sortable-masonry">

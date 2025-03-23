@@ -21,7 +21,7 @@ export default function About() {
                     </div>
                     <div className="col-lg-6 ps-lg-5">
                         <div className="section_heading mb_20">
-                        <span className="section_heading_title_small">About Royalking</span>
+                        <span className="section_heading_title_small">About Hotel Ashirwad</span>
                         <h2 className="section_heading_title_big">Luxury Hotel in The <br /> Heart of Mexico.</h2>
                         </div>
                         <p className="aboout-1-desc mb_30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer
