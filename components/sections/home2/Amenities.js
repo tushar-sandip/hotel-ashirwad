@@ -10,8 +10,8 @@ export default function Amenities() {
         <div className="team-1-wrapper">
           <div className="section_heading text-center mb_50">
             <span className="section_heading_title_small">Discover</span>
-            <h2 className="section_heading_title_big mb_20 alt">Our Best Amenities</h2>
-            <p className="color_gray_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer ultrices suspendisse varius etiam est. <br /> Est, felis, tempus nec vitae orci sodales Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor <br /> sagittis amet odio est. Sit semper et velit fusce.</p>
+            <h2 className="section_heading_title_big mb_20 alt">Our Premium Amenities at Ashirwad Hotel</h2>
+            <p className="color_gray_light">At Ashirwad Hotel, we offer a range of top-tier amenities designed for your comfort and convenience. From spacious rooms to exceptional service, we ensure a relaxing stay. Our facilities include well-maintained surroundings, a peaceful ambiance, and modern comforts. Whether you're here for leisure or business, we provide everything you need for a memorable experience. Enjoy seamless hospitality and a serene environment, making your stay with us truly special.</p>
           </div>
           <div className="row">
             <div className="col_xl_five col-lg-3 col-md-6">
@@ -41,7 +41,7 @@ export default function Amenities() {
             <div className="col_xl_five col-lg-3 col-md-6">
               <div className="icon_box-1 alt">
                 <div className="icon_box-1-icon"><i className="icon-12"></i></div>
-                <p className="fw_500">Swimming pool</p>
+                <p className="fw_500">Play Ground</p>
               </div>
             </div>
           </div>

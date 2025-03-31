@@ -35,7 +35,7 @@ export default function Banner() {
             <div
               className="swiper-slide"
               style={{
-                backgroundImage: "url(assets/images/main-slider/banner-1.jpeg)",
+                backgroundImage: "url(assets/images/main-slider/banner-1.jpg)",
               }}
             >
               <div className="content-outer">
@@ -63,7 +63,7 @@ export default function Banner() {
             <div
               className="swiper-slide"
               style={{
-                backgroundImage: "url(assets/images/main-slider/banner-2.jpeg)",
+                backgroundImage: "url(assets/images/main-slider/banner-2.jpg)",
               }}
             >
               <div className="content-outer">

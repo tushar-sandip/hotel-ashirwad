@@ -11,9 +11,9 @@ export default function Room() {
                     <div className="room-2-container">
                         <div className="section_heading mb_25">
                         <span className="section_heading_title_small">Discover</span>
-                        <h2 className="section_heading_title_big">Our Rooms <br /> & Suites</h2>
+                        <h3 className="section_heading_title_big">Our Rooms & Suites</h3>
                         </div>
-                        <p className="mb_30">Amet dui scelerisque vel habitant eget <br /> tincidunt facilisis pretium. Porttitor mi nisi, <br /> non vitae tempus.</p>
+                        <p className="mb_30">At Ashirwad Hotel, we offer comfortable and well-appointed rooms to suit every need. Choose from our Standard Room for a cozy stay or indulge in the spacious and luxurious Deluxe Room, both equipped with modern amenities to ensure a relaxing experience.</p>
                         
                     </div>
                     </div>

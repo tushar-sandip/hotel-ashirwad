@@ -12,7 +12,7 @@ export default function Home() {
           <div className="feature-image mb_90">
             <img src="assets/images/resource/feature-image-15.jpg" alt="" />
           </div>
-          <span className="section_heading_title_small">from $55.00</span>
+          <span className="section_heading_title_small">from ₹55.00</span>
           <h2 className="section_heading_title_big mb_60">Wellness & Facial Treatments</h2>
           <p className="mb_20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl turpis cum tempor vitae. Curabitur at amet, enim

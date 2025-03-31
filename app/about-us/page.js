@@ -108,7 +108,7 @@ export default function Home() {
                 </section>
 
             <section className="video-2-section">
-                <div className="video-1-bg" style={{ backgroundImage: "url(assets/images/background/abouthotel.jpeg)" }} data-parallax='{"y": 50}'></div>
+                <div className="video-1-bg" style={{ backgroundImage: "url(assets/images/background/abouthotel.jpg)" }} data-parallax='{"y": 50}'></div>
                 <div className="auto-container">
                     <div className="video-1-video-btn">
                         <div className="video-btn">
@@ -146,8 +146,8 @@ export default function Home() {
                 <div className="team-1-wrapper">
                     <div className="section_heading text-center mb_50">
                         <span className="section_heading_title_small">Discover</span>
-                        <h2 className="section_heading_title_big mb_20">Our Best Amenities</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer ultrices suspendisse varius etiam est. <br /> Est, felis, tempus nec vitae orci sodales Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor <br /> sagittis amet odio est. Sit semper et velit fusce.</p>
+                        <h2 className="section_heading_title_big mb_20">Our Premium Amenities at Ashirwad Hotel</h2>
+                        <p>At Ashirwad Hotel, we offer a range of top-tier amenities designed for your comfort and convenience. From spacious rooms to exceptional service, we ensure a relaxing stay. Our facilities include well-maintained surroundings, a peaceful ambiance, and modern comforts. Whether you're here for leisure or business, we provide everything you need for a memorable experience. Enjoy seamless hospitality and a serene environment, making your stay with us truly special.</p>
                     </div>
                     <div className="row">
                         <div className="col_xl_five col-lg-3 col-md-6">
@@ -177,7 +177,7 @@ export default function Home() {
                         <div className="col_xl_five col-lg-3 col-md-6">
                             <div className="icon_box-1">
                                 <div className="icon_box-1-icon"><i className="icon-12"></i></div>
-                                <p className="fw_500">Swimming pool</p>
+                                <p className="fw_500">Play Ground</p>
                             </div>
                         </div>
                         <div className="col_xl_five col-lg-3 col-md-6">
@@ -325,31 +325,31 @@ export default function Home() {
                     <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image.jpeg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image.jpg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
-                            <h4 className="feature-2-title mb_20">Kick off Summer <br /> in NYC</h4>
-                            <p className="feature-2-text">Amet minim mollit no duis sit enim <br /> aliqua dolor do amet officia.</p>
+                            <h4 className="feature-2-title mb_20">Kick off Summer  <br />  Hotel Ashirwad</h4>
+                            <p className="feature-2-text">Celebrate the season with a refreshing summer stay at Hotel Ashirwad. Relax in luxury, explore the natural beauty of Ambegaon,<br /> and enjoy the perfect escape from the everyday hustle.</p>
                         </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-2.jpeg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-2.jpg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
                             <h4 className="feature-2-title mb_20">Free Breakfast <br /> Packages</h4>
-                            <p className="feature-2-text">Amet minim mollit no duis sit enim <br /> aliqua dolor do amet officia.</p>
+                            <p className="feature-2-text">Start your day right with our Free Breakfast Packages! Enjoy a delicious, complimentary breakfast each morning during your stay at Hotel Ashirwad,<br />  making your experience even more enjoyable.</p>
                         </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-3.jpeg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-3.jpg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
                             <h4 className="feature-2-title mb_20">The Signature <br /> Collection</h4>
-                            <p className="feature-2-text">Amet minim mollit no duis sit enim <br /> aliqua dolor do amet officia.</p>
+                            <p className="feature-2-text">Indulge in our Signature Collection at Hotel Ashirwad. Experience the epitome of luxury with exclusive rooms, premium amenities,<br />  and personalized service that elevate your stay to new heights.</p>
                         </div>
                         </div>
                     </div>

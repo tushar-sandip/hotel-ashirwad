@@ -6,7 +6,7 @@ export default function Video() {
         <>
            
            <section className="video-1-section">
-      <div className="video-1-bg" style={{ backgroundImage: 'url(assets/images/background/abouthotel.jpeg)' }} data-parallax='{"y": 50}'></div>
+      <div className="video-1-bg" style={{ backgroundImage: 'url(assets/images/background/abouthotel.jpg)' }} data-parallax='{"y": 50}'></div>
       <div className="auto-container">
         <div className="video-1-video-btn">
         <div className="video-btn">

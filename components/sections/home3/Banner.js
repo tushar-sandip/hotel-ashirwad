@@ -35,7 +35,7 @@ export default function Banner() {
             <section className="banner-section p_relative">
                       <Swiper {...swiperOptions} className="banner-carousel">                    
                           <SwiperSlide className="slide-item p_relative">
-                              <div className="swiper-slide" style={{ backgroundImage: 'url(assets/images/main-slider/banner-2.jpeg)' }}>
+                              <div className="swiper-slide" style={{ backgroundImage: 'url(assets/images/main-slider/banner-2.jpg)' }}>
                                 <div className="content-outer">
                                   <div className="content-box">
                                     <div className="inner">

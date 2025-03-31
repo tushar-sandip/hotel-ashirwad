@@ -72,12 +72,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12 masonry-item all Nursing col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-1.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-1.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-1.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-1.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -87,12 +87,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Medical col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-2.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-2.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-2.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-2.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -101,12 +101,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Nursing col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-3.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-3.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-3.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-3.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -115,12 +115,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Senior col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-4.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-4.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-4.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-4.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -129,12 +129,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Nursing col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-5.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-5.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-5.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-5.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -143,12 +143,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Medical col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-6.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-6.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-6.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-6.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -157,12 +157,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Medical col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-7.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-7.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-7.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-7.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -171,12 +171,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Nursing col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-8.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-8.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-8.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-8.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -185,12 +185,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Senior col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-9.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-9.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-9.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-9.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -199,12 +199,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Medical col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-5.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-5.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-5.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-5.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -213,12 +213,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Senior col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-3.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-3.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-3.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-3.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>
@@ -227,12 +227,12 @@ export default function PortfolioFilter1() {
                             <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all Senior col-lg-4 col-md-6 col-sm-12">
                             <div className="gallery-block-1-inner-box">
                                 <div className="gallery-block-1-image">
-                                <img src="assets/images/gallery/gallery-8.jpg" alt="" />
+                                <img src="assets/images/gallery/gallery-8.jpeg" alt="" />
                                 </div>
                                 <div className="gallery-block-1-overlay">
                                 <div className="gallery-block-1-lower-content">
                                     <div className="gallery-block-1-link-btn">
-                                    <Link href="assets/images/gallery/gallery-8.jpg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
+                                    <Link href="assets/images/gallery/gallery-8.jpeg" className="lightbox-image" data-fancybox="gallery"><span className="icon-24"></span></Link>
                                     </div>
                                 </div>
                                 </div>

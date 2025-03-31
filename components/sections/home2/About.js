@@ -10,12 +10,9 @@ export default function About() {
                     <div className="col-lg-6">
                         <div className="section_heading mb_20">
                         <span className="section_heading_title_small">About Hotel Ashirwad</span>
-                        <h2 className="section_heading_title_big">Luxury <br /> Hotel in The Heart of <br /> San Francisco.</h2>
+                        <h3 className="section_heading_title_big">Experience Luxury at Hotel Ashirwad, Ambegaon</h3>
                         </div>
-                        <p className="aboout-1-desc mb_30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer
-                        ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae orci sodales
-                        Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis
-                        amet odio est. Sit semper et velit fusce.</p>
+                        <p className="aboout-1-desc mb_30">Located on Bhimashankar Road, Hotel Ashirwad offers a perfect mix of luxury and nature. Enjoy spacious rooms, exceptional service, and breathtaking mountain views for a truly memorable stay.</p>
                         <div className="about-1-btn mb_30">
                         <Link href="/about" className="btn-1">Discover More<span></span></Link>
                         </div>
@@ -23,8 +20,8 @@ export default function About() {
                     <div className="col-lg-6 ps-lg-5">
                         <div className="about-2-image-wrap mb_30 p_relative">
                         <div className="about-2-shape-1"><img src="assets/images/shape/pattern-1.png" alt="" /></div>
-                        <div className="about-2-image-1" data-parallax='{"y": -20}'><img src="assets/images/resource/sideEntrance1.jpg" alt="" /></div>
-                        <div className="about-2-image-2" data-parallax='{"y": 20}'><img src="assets/images/resource/sideEntrance2.jpg" alt="" /></div>
+                        <div className="about-2-image-1" data-parallax='{"y": -20}'><img src="assets/images/resource/sideEntrance1.jpg" width={380} height={150} alt="" /></div>
+                        <div className="about-2-image-2" data-parallax='{"y": 20}'><img src="assets/images/resource/sideEntrance2.jpg" width={190} height={250} alt="" /></div>
                         <div className="about-2-video-area">
                             <div className="about-2-video-btn">
                                 <div className="video-btn">

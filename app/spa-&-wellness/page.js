@@ -10,7 +10,7 @@ export default function Home() {
                         <div className="row mb_120">
                         <div className="col-lg-6">
                             <div className="section_heading">
-                            <span className="section_heading_title_small">from $55.00</span>
+                            <span className="section_heading_title_small">from ₹55.00</span>
                             <h2 className="section_heading_title_big mb_40">Spa & Clinical Treatment</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl turpis cum tempor vitae. Curabitur at amet, enim sit commodo semper lectus phasellus. Non egestas ultrices magna gravida est sociis non ornare bibendum.</p>
                             <p className="mb_30">At quam ac ipsum volutpat non. Duis sagittis, sollicitudin eget tristique consectetur et facilisi. Viverra sit non sed orci magna venenatis.</p>

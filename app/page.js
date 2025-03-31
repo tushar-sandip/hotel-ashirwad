@@ -24,7 +24,7 @@ export default function Home() {
         <Offer />
         <Video />
         <Testimonial />
-        <Hotel_booking />
+        {/* <Hotel_booking /> */}
         <Blog />
       </Layout>
     </>
