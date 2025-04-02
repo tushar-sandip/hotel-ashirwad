@@ -5,7 +5,7 @@ export default function Home() {
         // Your component code
       };
       const roomData = [
-        { imageSrc: "assets/images/resource/room-1.jpg",
+        { imageSrc: "assets/images/gallery/room9.jpg",
         startingPrice: "$55.0",
         rating: 5,
         title: "Luxury Room",
@@ -14,8 +14,8 @@ export default function Home() {
         animationDuration: ".8s",
       },
       {
-        imageSrc: "assets/images/resource/room-2.jpg",
-        startingPrice: "$55.0",
+        imageSrc: "assets/images/gallery/room2.jpg",
+        startingPrice: "6855.0",
         rating: 5,
         title: "Delux Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",
@@ -23,16 +23,16 @@ export default function Home() {
         animationDuration: "1.2s",
       },
       {
-        imageSrc: "assets/images/resource/room-3.jpg",
-        startingPrice: "$55.0",
+        imageSrc: "assets/images/gallery/room3.jpg",
+        startingPrice: "8655.0",
         rating: 5,
         title: "Luxury Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",
         detailsLink: "/room-details",
         animationDuration: "1.5s",
       },
-      { imageSrc: "assets/images/resource/room-4.jpg",
-        startingPrice: "$55.0",
+      { imageSrc: "assets/images/gallery/room4.jpg",
+        startingPrice: "8655.0",
         rating: 5,
         title: "Luxury Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",
@@ -40,8 +40,8 @@ export default function Home() {
         animationDuration: ".8s",
       },
       {
-        imageSrc: "assets/images/resource/room-5.jpg",
-        startingPrice: "$55.0",
+        imageSrc: "assets/images/gallery/room5.jpg",
+        startingPrice: "6855.0",
         rating: 5,
         title: "Delux Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",
@@ -49,8 +49,8 @@ export default function Home() {
         animationDuration: "1.2s",
       },
       {
-        imageSrc: "assets/images/resource/room-6.jpg",
-        startingPrice: "$55.0",
+        imageSrc: "assets/images/gallery/room12.jpg",
+        startingPrice: "6655.0",
         rating: 5,
         title: "Luxury Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",

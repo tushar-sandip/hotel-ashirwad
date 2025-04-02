@@ -57,7 +57,7 @@ export default function TestimonialSlider3() {
         <>
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/resource/room-4.jpg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/gallery/room4.jpg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details">Luxury Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹4455.0</span>/night</p>
@@ -78,7 +78,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/resource/room-5.jpg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/gallery/room9.jpg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details">Luxury Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹4455.0</span>/night</p>
@@ -99,7 +99,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/resource/room-6.jpg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/gallery/room2.jpg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details">Luxury Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹4455.0</span>/night</p>
@@ -120,7 +120,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/resource/room-7.jpg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/gallery/room9.jpg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details">Luxury Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹4455.0</span>/night</p>
@@ -141,7 +141,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/resource/room-8.jpg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(assets/images/gallery/room4.jpg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details">Luxury Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹4455.0</span>/night</p>
