@@ -1,8 +1,8 @@
 {
+  "/room-1/page": "app/room-1/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/room-details/page": "app/room-details/page.js",
-  "/room-1/page": "app/room-1/page.js",
-  "/room-2/page": "app/room-2/page.js",
-  "/gallery/page": "app/gallery/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/room-2/page": "app/room-2/page.js"
 }

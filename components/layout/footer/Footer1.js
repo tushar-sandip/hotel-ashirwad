@@ -64,7 +64,7 @@ export default function Footer1() {
                 <div className="footer-bottom">
                     <div className="auto-container">
                         <div className="footer-bottom-row">
-                            <div className="footer-bottom-text text-center">Copyright 2024 by <Link href="/">Tushar Sudam Phalke</Link>&nbsp;All Right Reserved.</div>
+                            <div className="footer-bottom-text text-center">Copyright 2025 by <Link href="/">Tushar Sudam Phalke</Link>&nbsp;All Right Reserved.</div>
                         </div>
                     </div>
                 </div>

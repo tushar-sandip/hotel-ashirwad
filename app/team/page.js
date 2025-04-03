@@ -19,7 +19,7 @@ export default function Home() {
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-1.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
@@ -28,14 +28,14 @@ export default function Home() {
                                     </ul>
                                 </div>
                             </div>
-                            <h4 className="team-1-title">Wade Warren</h4>
+                            <h4 className="team-1-title">Dhananjay Phalke</h4>
                             <p className="team-1-designaiton">Main Chef</p>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-2.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
@@ -51,7 +51,7 @@ export default function Home() {
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-3.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
@@ -67,7 +67,7 @@ export default function Home() {
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-4.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
@@ -83,7 +83,7 @@ export default function Home() {
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-5.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
@@ -99,7 +99,7 @@ export default function Home() {
                     <div className="col-lg-4 col-md-6">
                         <div className="team-1-block">
                             <div className="team-1-image">
-                                <div className="team-1-image-wrap"><img src="assets/images/resource/team-6.jpg" alt="" /></div>
+                                <div className="team-1-image-wrap"><img src="assets/images/team/chef2.jpeg" alt="" /></div>
                                 <div className="team-1-share-icon-area">
                                     <ul className="team-1-social-icon">
                                         <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>

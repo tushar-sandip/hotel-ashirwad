@@ -43,11 +43,12 @@ export default function Banner() {
                   <div className="inner">
                     <h4>Summer Vacations</h4>
                     <h1>
-                      Luxury Hotel For <br /> Vacation.
+                    Where Every Stay is  <br />a Story
+                     
                     </h1>
                     <div className="text">
-                    Located in a peaceful setting, the hotel provides a unique opportunity{" "}
-                      <br /> to relax and connect with nature
+                    Where Nature Meets Luxury: Stay {" "}
+                      <br />at Hotel Ashirwad
                     </div>
                     <div className="link-box">
                       <Link href="/room-1" className="btn-1">
@@ -71,11 +72,124 @@ export default function Banner() {
                   <div className="inner">
                     <h4>Summer Vacations</h4>
                     <h1>
+                    Experience Tranquility in<br />Splendor
+                    </h1>
+                    <div className="text">
+                    Breathtaking Views and Unmatched Luxury at Hotel Ashirwad{" "}
+                      <br /> at Hotel Ashirwad
+                    </div>
+                    <div className="link-box">
+                      <Link href="/room-1" className="btn-1">
+                        Book Room <span></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide-item p_relative">
+            <div
+              className="swiper-slide"
+              style={{
+                backgroundImage: "url(assets/images/main-slider/banner-3.jpg)",
+              }}
+            >
+              <div className="content-outer">
+                <div className="content-box justify-content-center text-center">
+                  <div className="inner">
+                    <h4>Summer Vacations</h4>
+                    <h1>
+                    Indulge in Unmatched<br /> Luxury
+                     
+                    </h1>
+                    <div className="text">
+                    Escape the Ordinary: Experience Premium Comfort{" "}
+                      <br /> at Hotel Ashirwad
+                    </div>
+                    <div className="link-box">
+                      <Link href="/room-1" className="btn-1">
+                        Book Room <span></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide-item p_relative">
+            <div
+              className="swiper-slide"
+              style={{
+                backgroundImage: "url(assets/images/main-slider/banner-4.jpg)",
+              }}
+            >
+              <div className="content-outer">
+                <div className="content-box justify-content-center text-center">
+                  <div className="inner">
+                    <h4>Summer Vacations</h4>
+                    <h1>
+                    Stay, Relax, <br /> Rejuvenate.
+                    </h1>
+                    <div className="text">
+                    Your Perfect Getaway Awaits: Hotel Ashirwad{" "}
+                     
+                    </div>
+                    <div className="link-box">
+                      <Link href="/room-1" className="btn-1">
+                        Book Room <span></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide-item p_relative">
+            <div
+              className="swiper-slide"
+              style={{
+                backgroundImage: "url(assets/images/main-slider/banner-5.jpg)",
+              }}
+            >
+              <div className="content-outer">
+                <div className="content-box justify-content-center text-center">
+                  <div className="inner">
+                    <h4>Summer Vacations</h4>
+                    <h1>
+                    Luxury Hotel For <br /> Vacation.
+                    </h1>
+                    <div className="text">
+                    Relax in Style: Hotel Ashirwad – Where Luxury{" "}
+                      <br /> Meets Tranquility
+                    </div>
+                    <div className="link-box">
+                      <Link href="/room-1" className="btn-1">
+                        Book Room <span></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide-item p_relative">
+            <div
+              className="swiper-slide"
+              style={{
+                backgroundImage: "url(assets/images/main-slider/banner-6.jpg)",
+              }}
+            >
+              <div className="content-outer">
+                <div className="content-box justify-content-center text-center">
+                  <div className="inner">
+                    <h4>Summer Vacations</h4>
+                    <h1>
                       Your Home For <br /> Vacation.
                     </h1>
                     <div className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
-                      <br /> Turpis ridiculus tellus.
+                    A Serene Escape: Experience Ultimate Luxury {" "}
+                      <br /> at Hotel Ashirwad
                     </div>
                     <div className="link-box">
                       <Link href="/room-1" className="btn-1">

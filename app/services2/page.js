@@ -181,7 +181,7 @@ export default function Home() {
                                 <div className="team-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
                                         <div className="image-box">
-                                            <figure className="image"><img src="assets/images/team/team-1.jpg" alt="" /></figure>
+                                            <figure className="image"><img src="assets/images/team/chef2.jpeg" alt="" /></figure>
                                             <ul className="social-links clearfix">
                                                 <li><Link href="/services2"><i className="fab fa-facebook-f"></i></Link></li>
                                                 <li><Link href="/services2"><i className="fab fa-twitter"></i></Link></li>
@@ -199,7 +199,7 @@ export default function Home() {
                                 <div className="team-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
                                         <div className="image-box">
-                                            <figure className="image"><img src="assets/images/team/team-2.jpg" alt="" /></figure>
+                                            <figure className="image"><img src="assets/images/team/chef2.jpeg" alt="" /></figure>
                                             <ul className="social-links clearfix">
                                                 <li><Link href="/services2"><i className="fab fa-facebook-f"></i></Link></li>
                                                 <li><Link href="/services2"><i className="fab fa-twitter"></i></Link></li>
@@ -217,7 +217,7 @@ export default function Home() {
                                 <div className="team-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
                                         <div className="image-box">
-                                            <figure className="image"><img src="assets/images/team/team-3.jpg" alt="" /></figure>
+                                            <figure className="image"><img src="assets/images/team/chef2.jpeg" alt="" /></figure>
                                             <ul className="social-links clearfix">
                                                 <li><Link href="/services2"><i className="fab fa-facebook-f"></i></Link></li>
                                                 <li><Link href="/services2"><i className="fab fa-twitter"></i></Link></li>
@@ -235,7 +235,7 @@ export default function Home() {
                                 <div className="team-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
                                         <div className="image-box">
-                                            <figure className="image"><img src="assets/images/team/team-4.jpg" alt="" /></figure>
+                                            <figure className="image"><img src="assets/images/team/chef2.jpeg" alt="" /></figure>
                                             <ul className="social-links clearfix">
                                                 <li><Link href="/services2"><i className="fab fa-facebook-f"></i></Link></li>
                                                 <li><Link href="/services2"><i className="fab fa-twitter"></i></Link></li>

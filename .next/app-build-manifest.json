@@ -27,10 +27,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/room-details/page.js"
     ],
-    "/room-1/page": [
+    "/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/room-1/page.js"
+      "static/chunks/app/about-us/page.js"
+    ],
+    "/team/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/team/page.js"
     ],
     "/room-2/page": [
       "static/chunks/webpack.js",
@@ -41,6 +46,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/gallery/page.js"
+    ],
+    "/testimonials/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/testimonials/page.js"
+    ],
+    "/food-menu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/food-menu/page.js"
+    ],
+    "/room-1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/room-1/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
     ]
   }
 }

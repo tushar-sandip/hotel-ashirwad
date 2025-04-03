@@ -42,13 +42,15 @@ export default function Menu() {
                         </li>
                     </ul>
                 </li>
-                <li className="dropdown"><Link href="#">Rooms</Link>
+                {/* <li className="dropdown"><Link href="#">Rooms</Link>
                     <ul>
                         <li><Link href="/room-1">Room Style 01</Link></li>
                         <li><Link href="/room-2">Room Style 02</Link></li>
                         <li><Link href="/room-details">Room Details</Link></li>
                     </ul>
-                </li>
+                </li> */}
+                <li><Link href="/room-1">Rooms</Link>
+                </li> 
                 <li><Link href="/gallery">Gallery</Link>
                 </li> 
                 <li><Link href="/contact">Contact</Link></li>
