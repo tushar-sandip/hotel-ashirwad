@@ -46,8 +46,8 @@ export default function Banner() {
                       Luxury Hotel For <br /> Vacation.
                     </h1>
                     <div className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
-                      <br /> Turpis ridiculus tellus.
+                    Located in a peaceful setting, the hotel provides a unique opportunity{" "}
+                      <br /> to relax and connect with nature
                     </div>
                     <div className="link-box">
                       <Link href="/room-1" className="btn-1">
