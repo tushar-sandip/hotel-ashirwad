@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
-        delay: 7000,
-        disableOnInteraction: false,
+        delay: 5000,
+        disableOnInteraction: true,
     },
     loop: true,
 
@@ -56,49 +56,33 @@ export default function TestimonialSlider1() {
         <>
             <Swiper {...swiperOptions} className="swiper-container single-item-carousel">
                 <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/resource/project-1.jpg)' }}>
-                    <div className="project-1-block">
-                        <span className="section_heading_title_small">Discover</span>
-                        <h2 className="section_heading_title_big fs_50 mb_20">Rooms & Suites</h2>
-                        <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        Adipiscing integer ultrices suspendisse varius etiam est
-                        tempus nec vitae orci sodales.</p>
-                    </div>
+                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room4.jpg)' }}>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/resource/project-2.jpg)' }}>
-                        <div className="project-1-block">
-                            <span className="section_heading_title_small">Discover</span>
-                            <h2 className="section_heading_title_big fs_50 mb_20">Rooms & Suites</h2>
-                            <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            Adipiscing integer ultrices suspendisse varius etiam est
-                            tempus nec vitae orci sodales.</p>
-                        </div>
+                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room9.jpg)' }}>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/resource/project-3.jpg)' }}>
-                    <div className="project-1-block">
-                        <span className="section_heading_title_small">Discover</span>
-                        <h2 className="section_heading_title_big fs_50 mb_20">Rooms & Suites</h2>
-                        <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        Adipiscing integer ultrices suspendisse varius etiam est
-                        tempus nec vitae orci sodales.</p>
-                    </div>
+                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room3.jpg)' }}>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/resource/project-3.jpg)' }}>
-                            <div className="project-1-block">
-                                <span className="section_heading_title_small">Discover</span>
-                                <h2 className="section_heading_title_big fs_50 mb_20">Rooms & Suites</h2>
-                                <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                Adipiscing integer ultrices suspendisse varius etiam est
-                                tempus nec vitae orci sodales.</p>
+                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room5.jpg)' }}>
                             </div>
+                </SwiperSlide> 
+                <SwiperSlide className="swiper-slide">
+                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room6.jpg)' }}>
                             </div>
-                </SwiperSlide>                
+                </SwiperSlide> 
+                <SwiperSlide className="swiper-slide">
+                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room7.jpg)' }}>
+                            </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room8.jpg)' }}>
+                            </div>
+                </SwiperSlide>                        
             </Swiper>
         </>
     )

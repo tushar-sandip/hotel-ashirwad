@@ -86,15 +86,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   </ul>
                   <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></div>
                 </li>
-                <li className={isActive.key == 5 ? "dropdown current" : "dropdown"}><Link href="/#" onClick={handleMobileMenu}>Rooms</Link>
-                    <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                        <li><Link href="/room-1" onClick={handleMobileMenu}>Room Style 01</Link></li>
-                        <li><Link href="/room-2" onClick={handleMobileMenu}>Room Style 02</Link></li>
-                        <li><Link href="/room-details" onClick={handleMobileMenu}>Room Details</Link></li>
-                    </ul>
-                    <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></div>
+                <li><Link href="/room-1">Rooms</Link>
                 </li>
-                
                 <li><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
                 <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
               </ul>

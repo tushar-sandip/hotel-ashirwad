@@ -1,8 +1,8 @@
 {
-  "/room-1/page": "app/room-1/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/gallery/page": "app/gallery/page.js",
   "/page": "app/page.js",
-  "/room-details/page": "app/room-details/page.js",
-  "/room-2/page": "app/room-2/page.js"
+  "/about-us/page": "app/about-us/page.js",
+  "/booking-form/page": "app/booking-form/page.js",
+  "/room-1/page": "app/room-1/page.js",
+  "/room-details/page": "app/room-details/page.js"
 }
