@@ -42,10 +42,10 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                     Where Every Stay is  <br />a Story
                      
-                    </h1>
+                    </h2>
                     <div className="text">
                     Where Nature Meets Luxury: Stay {" "}
                       <br />at Hotel Ashirwad
@@ -71,9 +71,9 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                     Experience Tranquility in<br />Splendor
-                    </h1>
+                    </h2>
                     <div className="text">
                     Breathtaking Views and Unmatched Luxury at Hotel Ashirwad{" "}
                       <br /> at Hotel Ashirwad
@@ -99,10 +99,10 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                     Indulge in Unmatched<br /> Luxury
                      
-                    </h1>
+                    </h2>
                     <div className="text">
                     Escape the Ordinary: Experience Premium Comfort{" "}
                       <br /> at Hotel Ashirwad
@@ -128,9 +128,9 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                     Stay, Relax, <br /> Rejuvenate.
-                    </h1>
+                    </h2>
                     <div className="text">
                     Your Perfect Getaway Awaits: Hotel Ashirwad{" "}
                      
@@ -156,9 +156,9 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                     Luxury Hotel For <br /> Vacation.
-                    </h1>
+                    </h2>
                     <div className="text">
                     Relax in Style: Hotel Ashirwad – Where Luxury{" "}
                       <br /> Meets Tranquility
@@ -184,9 +184,9 @@ export default function Banner() {
                 <div className="content-box justify-content-center text-center">
                   <div className="inner">
                     <h4>Summer Vacations</h4>
-                    <h1>
+                    <h2 className="color_light">
                       Your Home For <br /> Vacation.
-                    </h1>
+                    </h2>
                     <div className="text">
                     A Serene Escape: Experience Ultimate Luxury {" "}
                       <br /> at Hotel Ashirwad

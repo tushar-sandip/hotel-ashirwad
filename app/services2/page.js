@@ -150,7 +150,7 @@ export default function Home() {
                         <div className="col-lg-4 col-md-12 col-sm-12 title-column">
                             <div className="sec-title">
                             <span className="sub-title">Testimonials</span>
-                            <h2>What They’re Say About Us?</h2>
+                            <h3>What They’re Say About Us?</h3>
                             <p>
                                 Amet dui scelerisque vel habitant eget tincidunt facilisis
                                 pretium. Porttitor mi nisi, non vitae tempus.

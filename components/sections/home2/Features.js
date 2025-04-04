@@ -10,7 +10,7 @@ export default function Features() {
                 <div className="auto-container">
                     <div className="section_heading text-center mb_60">
                     <span className="section_heading_title_small">Exclusive Offers</span>
-                    <h2 className="section_heading_title_big">Featured Special <br /> Offers</h2>
+                    <h3 className="section_heading_title_big">Featured Special <br /> Offers</h3>
                     </div>
                     <div className="row">
                     <div className="col-lg-4 col-md-6">

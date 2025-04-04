@@ -146,7 +146,7 @@ export default function Home() {
                 <div className="team-1-wrapper">
                     <div className="section_heading text-center mb_50">
                         <span className="section_heading_title_small">Discover</span>
-                        <h2 className="section_heading_title_big mb_20">Our Premium Amenities at Ashirwad Hotel</h2>
+                        <h3 className="section_heading_title_big mb_20 color_light">Our Premium Amenities at Ashirwad Hotel</h3>
                         <p>At Ashirwad Hotel, we offer a range of top-tier amenities designed for your comfort and convenience. From spacious rooms to exceptional service, we ensure a relaxing stay. Our facilities include well-maintained surroundings, a peaceful ambiance, and modern comforts. Whether you're here for leisure or business, we provide everything you need for a memorable experience. Enjoy seamless hospitality and a serene environment, making your stay with us truly special.</p>
                     </div>
                     <div className="row">
@@ -320,7 +320,7 @@ export default function Home() {
                 <div className="auto-container">
                     <div className="section_heading text-center mb_60">
                     <span className="section_heading_title_small">Exclusive Offers</span>
-                    <h2 className="section_heading_title_big">Featured Special <br /> Offers</h2>
+                    <h3 className="section_heading_title_big">Featured Special <br /> Offers</h3>
                     </div>
                     <div className="row">
                     <div className="col-lg-4 col-md-6">

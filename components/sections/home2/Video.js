@@ -16,7 +16,7 @@ export default function Video() {
         </div>
         </div>
         <div className="text-center">
-          <h2 className="color_light">Watch The Experience Before <br />You Feel It</h2>
+          <h3 className="color_light">Watch The Experience Before <br />You Feel It</h3>
         </div>
       </div>
     </section>
