@@ -1,4 +1,6 @@
 {
+  "/room-details/page": "app/room-details/page.js",
   "/page": "app/page.js",
-  "/room-details/page": "app/room-details/page.js"
+  "/booking-form/page": "app/booking-form/page.js",
+  "/about-us/page": "app/about-us/page.js"
 }

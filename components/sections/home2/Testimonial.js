@@ -7,7 +7,7 @@ export default function Testimonial() {
 
 <section className="section-padding">
       <div className="auto-container">
-        <div className="section_heading mb_50 text-center">
+        <div className="section_heading text-center">
           <span className="section_heading_title_small">Testimonials</span>
           <h3 className="section_heading_title_big">
             What They’re Say <br /> About Us?
