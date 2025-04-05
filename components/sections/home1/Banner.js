@@ -47,7 +47,7 @@ export default function Banner() {
                               </h1>
                               <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br /> Turpis ridiculus tellus.</div>
                               <div className="link-box">
-                                <Link href="/room-1" className="btn-1">Book Room <span></span></Link>
+                                <Link href="/room" className="btn-1">Book Room <span></span></Link>
                               </div>
                             </div>
                           </div>
@@ -64,7 +64,7 @@ export default function Banner() {
                                 <h1>Your <br /> Home For <br /> Vacation.</h1>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br /> Turpis ridiculus tellus.</div>
                                 <div className="link-box">
-                                  <Link href="/room-1" className="btn-1">Book Room <span></span></Link>
+                                  <Link href="/room" className="btn-1">Book Room <span></span></Link>
                                 </div>
                               </div>
                             </div>

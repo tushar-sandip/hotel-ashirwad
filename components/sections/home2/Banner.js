@@ -51,7 +51,7 @@ export default function Banner() {
                       <br />at Hotel Ashirwad
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>
@@ -79,7 +79,7 @@ export default function Banner() {
                       <br /> at Hotel Ashirwad
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>
@@ -108,7 +108,7 @@ export default function Banner() {
                       <br /> at Hotel Ashirwad
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>
@@ -136,7 +136,7 @@ export default function Banner() {
                      
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>
@@ -164,7 +164,7 @@ export default function Banner() {
                       <br /> Meets Tranquility
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>
@@ -192,7 +192,7 @@ export default function Banner() {
                       <br /> at Hotel Ashirwad
                     </div>
                     <div className="link-box">
-                      <Link href="/room-1" className="btn-1">
+                      <Link href="/room" className="btn-1">
                         Book Room <span></span>
                       </Link>
                     </div>

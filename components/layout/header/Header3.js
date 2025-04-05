@@ -63,7 +63,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <li className="search-box-outer search-toggler" onClick={handlePopup}><i className="icon-1"></i></li>
                             </button>
                             <div className="header-link-btn">
-                            <Link href="/booking-form" className="btn-1 btn-small btn-alt">
+                            <Link href="/booking" className="btn-1 btn-small btn-alt">
                                 Book Your Stay <span></span>
                             </Link>
                             </div>
@@ -107,7 +107,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             </div>
                             <div className="right-column d-flex align-items-center">
                             <div className="header-link-btn">
-                                <Link href="/booking-form" className="btn-1 btn-small btn-alt">
+                                <Link href="/booking" className="btn-1 btn-small btn-alt">
                                 Book Your Stay <span></span>
                                 </Link>
                             </div>

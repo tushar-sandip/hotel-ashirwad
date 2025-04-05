@@ -12,7 +12,7 @@ export default function Home() {
                 What They're Say <br /> About Us?
               </h2>
             </div>
-            <div className="row">
+            <div className="row ">
               {/* First Testimonial */}
               <article className="col-lg-4 col-md-6 testimonial-1-block">
                 <div className="testimonial-1-quote-icon">

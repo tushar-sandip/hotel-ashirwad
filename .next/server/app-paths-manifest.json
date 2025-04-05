@@ -1,6 +1,5 @@
 {
-  "/room-details/page": "app/room-details/page.js",
   "/page": "app/page.js",
-  "/booking-form/page": "app/booking-form/page.js",
-  "/about-us/page": "app/about-us/page.js"
+  "/testimonials/page": "app/testimonials/page.js",
+  "/team/page": "app/team/page.js"
 }
