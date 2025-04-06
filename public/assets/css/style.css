@@ -4511,6 +4511,37 @@ ul.category-widget-list li.active i {
     position: relative;
 }
 
+.cursor-pointer{
+	cursor: pointer;
+	}
+	
+
+	/* Default background color for all categories */
+.menu-category-item {
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #f7f7f7; /* Default background */
+	border-radius: 5px;
+	margin-bottom: 10px;
+	transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover Effect */
+  .menu-category-item:hover {
+	background-color: #e1e1e1; /* Light hover background */
+  }
+  
+  /* Active Category */
+  .menu-category-item.active {
+	background-color: #b30000; /* Background color for selected category */
+	color: white; /* White text color when selected */
+  }
+  
+
+  .border-radius{
+	border-radius: 0px 7px 7px 0px;
+  }
 
 
 

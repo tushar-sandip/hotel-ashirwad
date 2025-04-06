@@ -6,7 +6,7 @@ export default function Home() {
       };
       const roomData = [
         { imageSrc: "assets/images/gallery/room9.jpg",
-        startingPrice: "$55.0",
+        startingPrice: "55.0",
         rating: 5,
         title: "Luxury Room",
         description: "Mattis cras magna morb punar aenean aliquet in. Risus a arcu eget.",
