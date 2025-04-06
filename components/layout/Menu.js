@@ -24,7 +24,7 @@ export default function Menu() {
                 <li className="dropdown"><Link href="#">Pages</Link>
                     <ul>
                         
-                        <li><Link href="/food-menu">Manu</Link></li>
+                        <li><Link href="/food-menu">Menu</Link></li>
                         <li><Link href="/gallery">Gallery</Link></li>
                         <li><Link href="/amenities">Amenities</Link></li>
                         

@@ -63,7 +63,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   <Link href="/#" onClick={handleMobileMenu}>Pages</Link>
                   <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                     
-                    <li><Link href="/food-menu" onClick={handleMobileMenu}>Manu</Link></li>
+                    <li><Link href="/food-menu" onClick={handleMobileMenu}>Menuu</Link></li>
                         <li><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
                         <li><Link href="/spa-&-wellness" onClick={handleMobileMenu}>Spa & Wellness</Link></li>
                         <li><Link href="/amenities" onClick={handleMobileMenu}>Amenities</Link></li>
