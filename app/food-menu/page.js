@@ -5,6 +5,9 @@ import { WOW } from "wowjs";
 import { useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
 
+
+
+
 export default function Home() {
   useEffect(() => {
     new WOW().init();
