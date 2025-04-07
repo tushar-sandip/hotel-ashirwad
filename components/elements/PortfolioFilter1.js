@@ -315,6 +315,128 @@ export default function PortfolioFilter1() {
               </div>
             </div>
           </div>
+
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all DoubleRoom col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room18.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room18.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all overView col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room19.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room19.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all overView col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room20.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room20.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all DoubleRoom col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room21.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room21.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all overView col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room16.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room16.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12  masonry-item all overView col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-block-1-inner-box">
+              <div className="gallery-block-1-image">
+                <img src="assets/images/gallery/room17.jpg" alt="" />
+              </div>
+              <div className="gallery-block-1-overlay">
+                <div className="gallery-block-1-lower-content">
+                  <div className="gallery-block-1-link-btn">
+                    <Link
+                      href="assets/images/gallery/room17.jpg"
+                      className="lightbox-image"
+                      data-fancybox="gallery"
+                    >
+                      <span className="icon-24"></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

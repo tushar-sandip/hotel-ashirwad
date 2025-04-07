@@ -1,4 +1,10 @@
 {
+  "/gallery/page": "app/gallery/page.js",
+  "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/room-details/page": "app/room-details/page.js",
+  "/room/page": "app/room/page.js",
+  "/about-us/page": "app/about-us/page.js",
   "/food-menu/page": "app/food-menu/page.js",
-  "/page": "app/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

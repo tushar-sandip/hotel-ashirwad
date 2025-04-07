@@ -5,7 +5,7 @@ export default function Home() {
         // Your component code
       };
       const roomData = [
-        { imageSrc: "assets/images/gallery/room9.jpg",
+        { imageSrc: "assets/images/gallery/room8.jpg",
         startingPrice: "55.0",
         rating: 5,
         title: "Luxury Room",
@@ -40,7 +40,7 @@ export default function Home() {
         animationDuration: ".8s",
       },
       {
-        imageSrc: "assets/images/gallery/room5.jpg",
+        imageSrc: "assets/images/gallery/room6.jpg",
         startingPrice: "6855.0",
         rating: 5,
         title: "Delux Room",
@@ -49,7 +49,7 @@ export default function Home() {
         animationDuration: "1.2s",
       },
       {
-        imageSrc: "assets/images/gallery/room12.jpg",
+        imageSrc: "assets/images/gallery/room17.jpg",
         startingPrice: "6655.0",
         rating: 5,
         title: "Luxury Room",
