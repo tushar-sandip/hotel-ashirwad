@@ -6,6 +6,7 @@ import { useState } from 'react'
 import ReactCurvedText from 'react-curved-text'
 import ModalVideo from 'react-modal-video'
 import TestimonialSlider7 from '@/components/slider/TestimonialSlider7'
+
 export default function Home() {
     const [isOpen, setOpen] = useState(false)
     const [isActive, setIsActive] = useState({
