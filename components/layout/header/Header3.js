@@ -124,3 +124,4 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
         </>
     )
 }
+
