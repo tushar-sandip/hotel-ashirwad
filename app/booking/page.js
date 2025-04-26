@@ -133,9 +133,11 @@ export default function BookingFormPage() {
                           <button
                             type="button"
                             className="btn-1"
-                            onClick={() =>
-                              (window.location.href = generateWhatsAppLink())
-                            }
+                            onClick={() => {
+                              if (typeof window !== 'undefined') {
+                                window.location.href = generateWhatsAppLink();
+                              }
+                            }}
                           >
                             Book Now<span></span>
                           </button>
