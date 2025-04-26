@@ -1,17 +1,9 @@
 "use client";
 import Layout from "@/components/layout/Layout";
-import "wowjs/css/libs/animate.css";
-import { WOW } from "wowjs";
 import { useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
 
-
-
-
-export default function Home() {
-  useEffect(() => {
-    new WOW().init();
-  }, []);
+export default function FoodDetails() {
 
   const [openCategory, setOpenCategory] = useState(0); // Track which category is open
 
@@ -281,7 +273,7 @@ export default function Home() {
                               </div>
                               <div className="price-menu-1-image">
                                 <img
-                                  src={`/assets/images/desser.jpeg`}
+                                  src={`/public/assets/images/desser.jpeg`}
                                   alt={item.name}
                                   width={50}
                                   height={50}
@@ -303,7 +295,7 @@ export default function Home() {
         {/* Popular Dishes Section */}
         <section className="section-padding gray-bg">
           <div className="feature-3-shape-1 p_absolute r_30 b_0">
-            <img src="assets/images/shape/pattern-5.png" alt="" />
+            <img src="/public/assets/images/shape/pattern-5.png" alt="" />
           </div>
           <div className="auto-container">
             <div className="section_heading text-center">
@@ -322,7 +314,7 @@ export default function Home() {
                 >
                   <div className="feature-3-image hvr-img-zoom-1">
                     <img
-                      src="assets/images/resource/feature-image-12.jpg"
+                      src="/public/assets/images/resource/feature-image-12.jpg"
                       alt=""
                     />
                   </div>
@@ -348,7 +340,7 @@ export default function Home() {
                 >
                   <div className="feature-3-image hvr-img-zoom-1">
                     <img
-                      src="assets/images/resource/feature-image-13.jpg"
+                      src="/public/assets/images/resource/feature-image-13.jpg"
                       alt=""
                     />
                   </div>
@@ -374,7 +366,7 @@ export default function Home() {
                 >
                   <div className="feature-3-image hvr-img-zoom-1">
                     <img
-                      src="assets/images/resource/feature-image-14.jpg"
+                      src="/public/assets/images/resource/feature-image-14.jpg"
                       alt=""
                     />
                   </div>
