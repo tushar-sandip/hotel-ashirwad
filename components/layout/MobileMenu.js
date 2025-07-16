@@ -67,22 +67,22 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                         <li><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
                         <li><Link href="/spa-&-wellness" onClick={handleMobileMenu}>Spa & Wellness</Link></li>
                         <li><Link href="/amenities" onClick={handleMobileMenu}>Amenities</Link></li>
-                        <li className={isActive.subMenuKey == 4 ? "dropdown current" : "dropdown"}>
+                        {/* <li className={isActive.subMenuKey == 4 ? "dropdown current" : "dropdown"}>
                       <Link href="/#" onClick={handleMobileMenu}>Events</Link>
                       <ul style={{ display: `${isActive.subMenuKey == 4 ? "block" : "none"}` }}>
                         <li><Link href="/events" onClick={handleMobileMenu}>Events </Link></li>
                         <li><Link href="/event-details" onClick={handleMobileMenu}>Events Details</Link></li>
                       </ul>
                       <div className={isActive.subMenuKey == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3, 4)}><span className="fa fa-angle-right" /></div>
-                    </li>
-                        <li className={isActive.subMenuKey == 4 ? "dropdown current" : "dropdown"}>
+                    </li> */}
+                        {/* <li className={isActive.subMenuKey == 4 ? "dropdown current" : "dropdown"}>
                       <Link href="/#" onClick={handleMobileMenu}>Packages</Link>
                       <ul style={{ display: `${isActive.subMenuKey == 4 ? "block" : "none"}` }}>
                         <li><Link href="/packages" onClick={handleMobileMenu}>Packages</Link></li>
                         <li><Link href="/package-details" onClick={handleMobileMenu}>Package Details</Link></li>
                       </ul>
                       <div className={isActive.subMenuKey == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3, 4)}><span className="fa fa-angle-right" /></div>
-                    </li>
+                    </li> */}
                   </ul>
                   <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></div>
                 </li>

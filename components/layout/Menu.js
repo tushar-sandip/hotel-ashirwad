@@ -28,7 +28,7 @@ export default function Menu() {
                         <li><Link href="/gallery">Gallery</Link></li>
                         <li><Link href="/amenities">Amenities</Link></li>
                         
-                        <li className="dropdown"><Link href="#">Events</Link>
+                        {/* <li className="dropdown"><Link href="#">Events</Link>
                             <ul>
                                 <li><Link href="/events">Events </Link></li>
                                 <li><Link href="/event-details">Events Details</Link></li>
@@ -39,7 +39,7 @@ export default function Menu() {
                                 <li><Link href="/packages">Packages</Link></li>
                                 <li><Link href="/package-details">Package Details</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                 </li>
                 {/* <li className="dropdown"><Link href="#">Rooms</Link>

@@ -25,7 +25,20 @@
     "/amenities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/amenities/page.css",
       "static/chunks/app/amenities/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/booking/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/booking/page.css",
+      "static/chunks/app/booking/page.js"
     ]
   }
 }
