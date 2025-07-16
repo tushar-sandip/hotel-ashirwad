@@ -1,0 +1,38 @@
+.slider1-swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slider1-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background: transparent;
+}
+
+.slider1-image {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  max-height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+
+.slider1-image:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .slider1-slide {
+    height: 200px;
+  }
+  .slider1-image {
+    min-height: 120px;
+    max-height: 200px;
+  }
+} 

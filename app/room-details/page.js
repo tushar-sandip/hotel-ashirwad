@@ -259,7 +259,7 @@ export default function Home() {
                             className="btn-1"
                             onClick={() => {
                               if (typeof window !== 'undefined') {
-                                window.location.href = generateWhatsAppLink();
+                                    window.open(generateWhatsAppLink(), '_blank');
                               }
                             }}
                           >

@@ -1,6 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import styles from './TestimonialSlider1.module.scss';
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -54,35 +55,28 @@ const swiperOptions = {
 export default function TestimonialSlider1() {
     return (
         <>
-            <Swiper {...swiperOptions} className="swiper-container single-item-carousel">
-                <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room4.jpg)' }}>
-                    </div>
+            <Swiper {...swiperOptions} className={styles['slider1-swiper-container']}>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room4.jpg)' }} />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room9.jpg)' }}>
-                    </div>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room9.jpg)' }} />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room3.jpg)' }}>
-                    </div>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room3.jpg)' }} />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room5.jpg)' }}>
-                            </div>
-                </SwiperSlide> 
-                <SwiperSlide className="swiper-slide">
-                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room6.jpg)' }}>
-                            </div>
-                </SwiperSlide> 
-                <SwiperSlide className="swiper-slide">
-                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room7.jpg)' }}>
-                            </div>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room5.jpg)' }} />
                 </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                            <div className="project-1-image" style={{ backgroundImage: 'url(assets/images/gallery/room8.jpg)' }}>
-                            </div>
-                </SwiperSlide>                        
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room6.jpg)' }} />
+                </SwiperSlide>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room7.jpg)' }} />
+                </SwiperSlide>
+                <SwiperSlide className={styles['slider1-slide']}>
+                    <div className={styles['slider1-image']} style={{ backgroundImage: 'url(assets/images/gallery/room8.jpg)' }} />
+                </SwiperSlide>
             </Swiper>
         </>
     )

@@ -1,7 +1,6 @@
 {
-  "/page": "app/page.js",
-  "/food/page": "app/food/page.js",
   "/booking/page": "app/booking/page.js",
   "/room/page": "app/room/page.js",
+  "/room-details/page": "app/room-details/page.js",
   "/contact/page": "app/contact/page.js"
 }
