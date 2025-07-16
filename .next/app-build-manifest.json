@@ -6,36 +6,26 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
-    ],
     "/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/booking/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/booking/page.css",
-      "static/chunks/app/booking/page.js"
+      "static/chunks/app/not-found.js"
     ],
     "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/contact/page.css",
       "static/chunks/app/contact/page.js"
     ],
-    "/room/page": [
+    "/amenities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/room/page.js"
-    ],
-    "/room-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/room-details/page.js"
+      "static/chunks/app/amenities/page.js"
     ]
   }
 }
