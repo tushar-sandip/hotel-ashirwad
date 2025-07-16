@@ -11,7 +11,8 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
           <div className="header-top-1-left-column">
             <ul className="header-top-1-contact-info d-flex align-items-center">
               <li><a href="mailto:dhananjayphalke7058@gmail.com">dhananjayphalke7058@gmail.com</a></li>
-              <li><a href="tel:+91-213-666-0027">+91-9130373375</a></li>
+              <li><a href="tel:+91-213-666-0027">+91-9130375375</a></li>
+              <li><a href="tel:+91-213-666-0027">+91-9738375375</a></li>
             </ul>
           </div>
           <div className="header-top-1-right-column d-flex align-items-center">
@@ -24,10 +25,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
               </select>
             </div>
             <ul className="header-top-1-social-icon d-flex align-items-center">
-            <li><Link href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></Link></li>
-                  <li><Link href="https://twitter.com/?lang=en"><i className="fab fa-twitter"></i></Link></li>
-                  <li><Link href="https://bd.linkedin.com/"><i className="fab fa-linkedin-in"></i></Link></li>
-                  <li><Link href="https://www.instagram.com/hotel_ashirwad_ghodegaon/"><i className="fab fa-instagram"></i></Link></li>
+            <li><Link target="_blank"href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></Link></li>
+                  <li><Link target="_blank" href="https://twitter.com/?lang=en"><i className="fab fa-twitter"></i></Link></li>
+                  <li><Link target="_blank" href="https://bd.linkedin.com/"><i className="fab fa-linkedin-in"></i></Link></li>
+                  <li><Link target="_blank" href="https://www.instagram.com/hotelashirwad75/"><i className="fab fa-instagram"></i></Link></li>
             </ul>
           </div>
         </div>
