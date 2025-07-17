@@ -54,8 +54,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   <li><Link href="/about-us" onClick={handleMobileMenu}>About</Link></li>
                         <li><Link href="/team" onClick={handleMobileMenu}>Team</Link></li>
                         <li><Link href="/testimonials" onClick={handleMobileMenu}>Testimonials</Link></li>
-                        <li><Link href="/faq" onClick={handleMobileMenu}>FAQ</Link></li>
-                        <li><Link href="/not-found" onClick={handleMobileMenu}>404 Error Page</Link></li>
+                        {/* <li><Link href="/faq" onClick={handleMobileMenu}>FAQ</Link></li>
+                        <li><Link href="/not-found" onClick={handleMobileMenu}>404 Error Page</Link></li> */}
                   </ul>
                   <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></div>
                 </li>
@@ -65,7 +65,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     
                     <li><Link href="/food" onClick={handleMobileMenu}>Menu</Link></li>
                         <li><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
-                        <li><Link href="/spa-&-wellness" onClick={handleMobileMenu}>Spa & Wellness</Link></li>
+                        {/* <li><Link href="/spa-&-wellness" onClick={handleMobileMenu}>Spa & Wellness</Link></li> */}
                         <li><Link href="/amenities" onClick={handleMobileMenu}>Amenities</Link></li>
                         {/* <li className={isActive.subMenuKey == 4 ? "dropdown current" : "dropdown"}>
                       <Link href="/#" onClick={handleMobileMenu}>Events</Link>

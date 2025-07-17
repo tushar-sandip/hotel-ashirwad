@@ -65,7 +65,7 @@ export default function Home() {
                 {/* about-section end */}
                 <section className="section-padding feature-3-section gray-bg">
                     <div className="feature-3-shape-1 p_absolute r_30 b_0"><img src="assets/images/shape/pattern-5.png" alt="" /></div>
-                    <div className="auto-container">
+                    {/* <div className="auto-container">
                         <div className="row p_relative">
                         <div className="feature-3-shape-2"></div>
 
@@ -105,7 +105,7 @@ export default function Home() {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
 
             <section className="video-2-section">
