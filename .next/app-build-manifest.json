@@ -46,6 +46,7 @@
     "/food/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/food/page.css",
       "static/chunks/app/food/page.js"
     ],
     "/amenities/page": [
@@ -53,6 +54,16 @@
       "static/chunks/main-app.js",
       "static/css/app/amenities/page.css",
       "static/chunks/app/amenities/page.js"
+    ],
+    "/room/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/room/page.js"
+    ],
+    "/room-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/room-details/page.js"
     ]
   }
 }

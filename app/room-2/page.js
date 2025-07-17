@@ -8,9 +8,9 @@ export default function Home() {
     const roomData = [
         {
           backgroundImage: 'assets/images/gallery/room9.jpg',
-          title: 'Luxury Room',
+          title: 'Luxury Double Bed Room',
           rating: [1, 1, 1, 1, 2],
-          price: '7755.0',
+          price: '3700.0',
           text: 'Mattis cras magna morb punar aliquet in. Risus a arcu eget.',
         },
         {

@@ -25,11 +25,11 @@ export default function Home() {
                 <div className="col-lg-8 pe-lg-35">
                   <div className="single-post">
                     <span className="section_heading_title_small">
-                      FORM 77 55.00
+                      FORM 3700.00
                     </span>
-                    <h2 className="mb_40">Luxury Room</h2>
+                    <h2 className="mb_40">Luxury Double Bed Room</h2>
                     <p className="mb_20">
-                      The Luxury Room at Ashirwad Hotel offers the perfect
+                      The Luxury Double Bed Room at Ashirwad Hotel offers the perfect
                       retreat. Unwind in the spacious cottage, enjoy a hot cup
                       of coffee, and indulge in the luxurious amenities
                       provided. Take in the breathtaking mountain views and the
@@ -249,7 +249,7 @@ export default function Home() {
                         <div className="form-group mt-4">
                           <div className="d-flex align-items-center justify-content-between">
                             <h4 className="mb_20">Your Price</h4>
-                            <p>6669.0</p>
+                            <p>3700.0</p>
                           </div>
                         </div>
 
@@ -290,7 +290,7 @@ export default function Home() {
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">
-                        Start from <span className="theme-color">5555.0</span>
+                        Start from <span className="theme-color">3700.0</span>
                         /night
                       </p>
                       <div className="room-1-rating">
@@ -301,7 +301,7 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">Luxury Room</Link>
+                        <Link href="/room-details">Luxury Double Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
@@ -326,7 +326,7 @@ export default function Home() {
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">
-                        Start from <span className="theme-color">7755.0</span>
+                        Start from <span className="theme-color">3700.0</span>
                         /night
                       </p>
                       <div className="room-1-rating">
@@ -337,7 +337,7 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">Delux Room</Link>
+                        <Link href="/room-details">VIP Single Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
@@ -362,7 +362,7 @@ export default function Home() {
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">
-                        Start from <span className="theme-color">7655.0</span>
+                        Start from <span className="theme-color">3200.0</span>
                         /night
                       </p>
                       <div className="room-1-rating">
@@ -373,7 +373,7 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">Luxury Room</Link>
+                        <Link href="/room-details">Delux Single Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
