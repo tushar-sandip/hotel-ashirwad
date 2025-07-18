@@ -178,24 +178,22 @@ export default function Home() {
                       </li>
                     </ul>
                     <h3 className="fs_40 mb_30">Cancellation</h3>
-                    <p className="mb_70">
-                      <ul>
-                        <li> <i className="icon-20"></i>The amount is Non–Refundable.</li>
-                        <li>
+                    <ul className="mb_70">
+                      <li> <i className="icon-20"></i>The amount is Non–Refundable.</li>
+                      <li>
                         <i className="icon-20"></i> The amount can be adjusted fully in the next booking
-                          within 1 Month if informed 10 days prior to your
-                          booking dates.
-                        </li>
-                        <li>
+                        within 1 Month if informed 10 days prior to your
+                        booking dates.
+                      </li>
+                      <li>
                         <i className="icon-20"></i>Cancellations on the same day as well as 2 days prior
-                          will not be accepted and full retention on the booking
-                          amount will be applicable.
-                        </li>
-                        <li>
+                        will not be accepted and full retention on the booking
+                        amount will be applicable.
+                      </li>
+                      <li>
                         <i className="icon-20"></i>Amount will not be refunded in case of a no-show.
-                        </li>
-                      </ul>
-                    </p>
+                      </li>
+                    </ul>
                     <h3 className="fs_40 mb_30">Location</h3>
                     <p className="mb_30">
                       Bhimashankar Road is located in the Ambegaon taluka of
