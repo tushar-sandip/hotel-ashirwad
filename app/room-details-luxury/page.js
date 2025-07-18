@@ -17,7 +17,7 @@ export default function Home() {
   };
   return (
     <>
-      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Room Single">
+      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Luxury Double Bed Room">
         <div>
           <section className="section-padding">
             <div className="auto-container">
@@ -273,7 +273,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="section-padding pt-0">
+           <section className="section-padding pt-0">
             <div className="auto-container">
               <div className="section_heading mb_55">
                 <h2 className="section_heading_title_big">Related Rooms</h2>
@@ -301,14 +301,14 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">Luxury Double Bed Room</Link>
+                        <Link href="/room-details-luxury">Luxury Double Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
                         arcu eget.
                       </p>
                       <div className="link-btn">
-                        <Link href="/room-details" className="btn-1 btn-alt">
+                        <Link href="/room-details-luxury" className="btn-1 btn-alt">
                           Book Now <span></span>
                         </Link>
                       </div>
@@ -337,14 +337,14 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">VIP Single Bed Room</Link>
+                        <Link href="/room-details-VIP">VIP Single Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
                         arcu eget.
                       </p>
                       <div className="link-btn">
-                        <Link href="/room-details" className="btn-1 btn-alt">
+                        <Link href="/room-details-VIP" className="btn-1 btn-alt">
                           Book Now <span></span>
                         </Link>
                       </div>
@@ -373,14 +373,14 @@ export default function Home() {
                         <i className="icon-7"></i>
                       </div>
                       <h4 className="room-1-title mb_20">
-                        <Link href="/room-details">Delux Single Bed Room</Link>
+                        <Link href="/room-details-delux">Delux Single Bed Room</Link>
                       </h4>
                       <p className="room-1-text mb_30">
                         Mattis cras magna morb punar aenean aliquet in. Risus a
                         arcu eget.
                       </p>
                       <div className="link-btn">
-                        <Link href="/room-details" className="btn-1 btn-alt">
+                        <Link href="/room-details-delux" className="btn-1 btn-alt">
                           Book Now <span></span>
                         </Link>
                       </div>
