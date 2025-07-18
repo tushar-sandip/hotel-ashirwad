@@ -31,21 +31,25 @@
     "/room-details-luxury/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/room-details-luxury/page.css",
       "static/chunks/app/room-details-luxury/page.js"
     ],
     "/room-details-single/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/room-details-single/page.css",
       "static/chunks/app/room-details-single/page.js"
     ],
     "/room-details-VIP/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/room-details-VIP/page.css",
       "static/chunks/app/room-details-VIP/page.js"
     ],
     "/room-details-delux/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/room-details-delux/page.css",
       "static/chunks/app/room-details-delux/page.js"
     ]
   }

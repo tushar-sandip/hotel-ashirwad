@@ -1,4 +1,7 @@
 "use client";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
@@ -15,6 +18,31 @@ export default function Home() {
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   };
+
+  // Sample images for gallery
+  const images = [
+    {
+      original: "/assets/images/gallery/room3.jpg",
+      thumbnail: "/assets/images/gallery/room3.jpg",
+    },
+    {
+      original: "/assets/images/gallery/room2.jpg",
+      thumbnail: "/assets/images/gallery/room2.jpg",
+    },
+    {
+      original: "/assets/images/gallery/room4.jpg",
+      thumbnail: "/assets/images/gallery/room4.jpg",
+    },
+    {
+      original: "/assets/images/gallery/room11.jpg",
+      thumbnail: "/assets/images/gallery/room11.jpg",
+    },
+  ];
+
+  // Dynamically import PhotoSphereViewer for 360 view (client-side only)
+  const [show360, setShow360] = useState(false);
+  const PSV = dynamic(() => import("./PhotoSphereViewer"), { ssr: false });
+
   return (
     <>
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Single Bed Room">
@@ -24,10 +52,33 @@ export default function Home() {
               <div className="row">
                 <div className="col-lg-8 pe-lg-35">
                   <div className="single-post">
-                    <span className="section_heading_title_small">
-                      FORM 2700.00
+                    <span className="section_heading_title_small modern-price">
+                      FROM 3200.00
                     </span>
-                    <h2 className="mb_40">Single Bed Room</h2>
+                    <h2 className="mb_40 modern-title">Single Bed Room</h2>
+                    <div className="modern-gallery-tabs mb_40">
+                      <button
+                        className={`modern-tab-btn${!show360 ? " active" : ""}`}
+                        onClick={() => setShow360(false)}
+                      >
+                        Gallery
+                      </button>
+                      <button
+                        className={`modern-tab-btn${show360 ? " active" : ""}`}
+                        onClick={() => setShow360(true)}
+                      >
+                        360° View
+                      </button>
+                    </div>
+                    <div className="modern-gallery mb_60">
+                      {!show360 ? (
+                        <ImageGallery items={images} showPlayButton={false} showFullscreenButton={true} />
+                      ) : (
+                        <div style={{ height: 400, borderRadius: 12, overflow: "hidden", boxShadow: "0 2px 16px rgba(0,0,0,0.08)" }}>
+                          <PSV src="/assets/images/gallery/room360-single.jpg" />
+                        </div>
+                      )}
+                    </div>
                     <p className="mb_20">
                      Designed for comfort and convenience, our Deluxe Single Bed Room offers a spacious layout.
                     </p>
@@ -38,9 +89,6 @@ export default function Home() {
                       the breathtaking mountain views for a truly memorable
                       stay.
                     </p>
-                    <div className="mb_60">
-                      <img src="assets/images/gallery/room3.jpg" alt="" />
-                    </div>
                     <h3 className="fs_40 mb_30">Amenities</h3>
                     <p className="mb_50">
                       At Ashirwad Hotel, we offer a range of top-tier amenities
@@ -387,6 +435,53 @@ export default function Home() {
           </section>
         </div>
       </Layout>
+      <style jsx global>{`
+        .modern-gallery-tabs {
+          display: flex;
+          gap: 12px;
+          margin-bottom: 24px;
+        }
+        .modern-tab-btn {
+          background: #f5f5f5;
+          border: none;
+          padding: 10px 24px;
+          border-radius: 24px;
+          font-weight: 600;
+          color: #333;
+          cursor: pointer;
+          transition: background 0.2s, color 0.2s;
+          box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .modern-tab-btn.active {
+          background: #1e90ff;
+          color: #fff;
+        }
+        .modern-gallery {
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+          background: #fff;
+        }
+        .modern-title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #222;
+        }
+        .modern-price {
+          font-size: 1.1rem;
+          color: #1e90ff;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        @media (max-width: 768px) {
+          .modern-title {
+            font-size: 1.5rem;
+          }
+          .modern-gallery {
+            border-radius: 8px;
+          }
+        }
+      `}</style>
     </>
   );
 }
