@@ -1,7 +1,8 @@
 {
-  "/room-details-VIP/page": "app/room-details-VIP/page.js",
   "/room-details-luxury/page": "app/room-details-luxury/page.js",
   "/room/page": "app/room/page.js",
+  "/page": "app/page.js",
   "/room-details-delux/page": "app/room-details-delux/page.js",
+  "/room-details-VIP/page": "app/room-details-VIP/page.js",
   "/room-details-single/page": "app/room-details-single/page.js"
 }

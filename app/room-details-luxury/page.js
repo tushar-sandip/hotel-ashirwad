@@ -44,7 +44,7 @@ export default function Home() {
                       stay.
                     </p>
                     <div className="mb_60">
-                      <img src="assets/images/gallery/room9.jpg" alt="" />
+                      <img src="assets/images/gallery/room20.jpg" alt="" />
                     </div>
                     <h3 className="fs_40 mb_30">Amenities</h3>
                     <p className="mb_50">
