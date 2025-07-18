@@ -68,7 +68,7 @@ export default function TestimonialSlider5() {
                               >
                                 <div className="room-2-content">
                                   <h4 className="room-2-title">
-                                    <Link href="/room-details">Delux Room</Link>
+                                    <Link href="/room-details-delux">Delux Room</Link>
                                   </h4>
                                 </div>
                                 <div className="room-2-content2">
@@ -80,7 +80,7 @@ export default function TestimonialSlider5() {
                                     <i className="icon-7"></i>
                                   </div>
                                   <h4 className="room-2-title">
-                                    <Link href="/room-details">Luxury Room</Link>
+                                    <Link href="/room-details-luxury">Luxury Room</Link>
                                   </h4>
                                   <p className="room-2-meta-info">
                                     Start from <span className="theme-color">$55.0</span>/night
