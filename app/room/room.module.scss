@@ -77,3 +77,329 @@
   color: #888;
   font-size: 0.95rem;
 }
+
+// Modern Room Section Header
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.sectionTitle {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #222;
+  margin-bottom: 8px;
+}
+.sectionDivider {
+  width: 64px;
+  height: 4px;
+  margin: 0 auto 16px auto;
+  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  border-radius: 2px;
+}
+.sectionSubtitle {
+  color: #666;
+  font-size: 1.15rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// Modern Room Grid
+.roomGridModern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px 32px;
+  margin-top: 32px;
+  position: relative;
+  padding: 48px 0;
+  background: linear-gradient(135deg, #fff7e6 0%, #f8fafc 100%);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px rgba(255,152,0,0.07);
+  overflow: visible;
+
+  // Animated floating SVG pattern overlay
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: url('data:image/svg+xml;utf8,<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="40" fill="%23ff9800" fill-opacity="0.07"/><circle cx="300" cy="300" r="60" fill="%23ff5722" fill-opacity="0.06"/><circle cx="320" cy="80" r="24" fill="%232196f3" fill-opacity="0.07"/><circle cx="60" cy="320" r="18" fill="%23e91e63" fill-opacity="0.07"/></svg>');
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    animation: floatPattern 18s linear infinite;
+    opacity: 0.7;
+  }
+}
+@keyframes floatPattern {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 80px 60px, 80px 60px; }
+}
+
+// Animated dotted connecting line
+.roomGridModern::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ff9800 0 12px,
+    #ff5722 12px 24px
+  );
+  opacity: 0.13;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 0px 0px #ff9800;
+  animation: gradientLine 3s linear infinite;
+}
+@keyframes gradientLine {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+// Glow effect on card hover
+.roomCardNew:hover ~ .roomGridModern::before,
+.roomCardNew:focus-within ~ .roomGridModern::before {
+  box-shadow: 0 0 16px 4px #ff9800, 0 0 32px 8px #ff5722;
+  opacity: 0.22;
+}
+
+// Parallax effect for background pattern
+@media (pointer: fine) {
+  .roomGridModern {
+    perspective: 800px;
+  }
+  .roomGridModern::after {
+    will-change: background-position;
+    transition: background-position 0.3s cubic-bezier(.39,.575,.565,1);
+  }
+}
+
+// Hide connecting line and pattern on mobile
+@media (max-width: 900px) {
+  .roomGridModern::before,
+  .roomGridModern::after {
+    display: none;
+  }
+}
+
+.roomCardNew {
+  position: relative;
+  z-index: 2;
+}
+.roomDividerNew {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  margin: 32px 0;
+  opacity: 0.12;
+}
+
+// Modern Room Card
+.cardFadeIn {
+  animation: fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both;
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+  60% { opacity: 1; transform: translateY(-8px) scale(1.03); }
+  100% { opacity: 1; transform: none; }
+}
+.roomCardNew {
+  background: rgba(255,255,255,0.85);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  transition: box-shadow 0.25s cubic-bezier(.39,.575,.565,1), transform 0.25s cubic-bezier(.39,.575,.565,1);
+  position: relative;
+  &:hover {
+    box-shadow: 0 24px 64px rgba(255,152,0,0.22), 0 2px 16px rgba(0,0,0,0.10);
+    transform: translateY(-8px) scale(1.045);
+  }
+}
+.imageSection {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+.roomImageNew {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+.imageGradientOverlayNew {
+  position: absolute;
+  left: 0; right: 0; bottom: 0; top: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.22) 100%);
+  pointer-events: none;
+}
+.badgeRowNew {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 3;
+}
+.badgeNew {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  letter-spacing: 0.5px;
+  animation: popBadge 0.5s cubic-bezier(.39,.575,.565,1);
+}
+@keyframes popBadge {
+  0% { opacity: 0; transform: scale(0.7) translateY(-10px); }
+  60% { opacity: 1; transform: scale(1.15) translateY(2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.discountBadgeNew { background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%); }
+.bestSellerBadgeNew { background: #e91e63; }
+.newBadgeNew { background: #2196f3; }
+
+.priceTagNew {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  padding: 7px 18px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ff5722;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+.oldPriceNew {
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 1rem;
+  margin-right: 6px;
+}
+.currentPriceNew {
+  color: #ff5722;
+  font-weight: 800;
+  font-size: 1.13rem;
+}
+.contentSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 28px 24px 22px 24px;
+}
+.contentBoxNew {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.room1RatingNew {
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.reviewCountNew {
+  margin-left: 8px;
+  color: #888;
+  font-size: 0.98rem;
+}
+.roomTitleNew {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 8px 0 6px 0;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+.roomDescNew {
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  min-height: 48px;
+}
+.amenitiesRowNew {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 18px;
+}
+.amenityChipNew {
+  background: rgba(255,152,0,0.10);
+  color: #ff9800;
+  border-radius: 12px;
+  padding: 4px 12px 4px 8px;
+  font-size: 0.97rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+.amenityIconNew {
+  font-size: 1.1em;
+  margin-right: 2px;
+}
+.bookBtnRowNew {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.bookNowBtnNew {
+  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  color: #fff !important;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(255,152,0,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  &:hover {
+    background: linear-gradient(90deg, #ff5722 0%, #ff9800 100%);
+    box-shadow: 0 6px 24px rgba(255,152,0,0.18);
+    transform: scale(1.04);
+    animation: pulseBtn 0.5s;
+  }
+}
+@keyframes pulseBtn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1.04); }
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .roomGridModern {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .contentSection {
+    padding: 18px 10px 16px 10px;
+  }
+  .roomCardNew {
+    min-height: 400px;
+  }
+}
