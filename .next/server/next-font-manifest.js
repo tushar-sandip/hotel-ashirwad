@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/tusharphalke/Documents/2025_AS_LODGING/hotel-ashirwad/app/layout\":[\"static/media/7219c48e37faf350-s.p.woff2\",\"static/media/9c18eba18d4baf22-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/tusharphalke/Documents/2025_AS_LODGING/hotel-ashirwad/app/layout":["static/media/7219c48e37faf350-s.p.woff2","static/media/9c18eba18d4baf22-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
