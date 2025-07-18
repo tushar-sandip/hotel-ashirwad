@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Room.module.scss";
+import styles from "./room.module.scss";
 import React from 'react';
 
 // Emoji icons for amenities (replace with react-icons if you want)

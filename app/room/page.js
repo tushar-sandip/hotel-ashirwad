@@ -1,7 +1,7 @@
 "use client";
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import styles from "./Room.module.scss";
+import styles from "./room.module.scss";
 import RoomCard from "./RoomCard";
 import React from "react";
 const roomData = [
