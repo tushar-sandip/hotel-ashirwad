@@ -1870,7 +1870,7 @@ button.theme-btn.search-toggler:hover {
   }
 .scroll-to-top{
 	position: fixed;
-	right: 0px;
+	right: 80px;
 	bottom: 50px;
 	transform: rotate(90deg);
 	z-index: 99;
@@ -4634,6 +4634,10 @@ cursor: pointer;
   .border-radius{
 	border-radius: 0px 7px 7px 0px;
   }
+
+.whatsapp-float {
+    z-index: 9999 !important;
+}
 
 
 

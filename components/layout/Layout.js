@@ -61,6 +61,10 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {footerStyle == 1 ? < Footer1 /> : null}
             </div>
             <BackToTop scroll={scroll} />
+            {/* Floating WhatsApp Button */}
+            <a href={`https://wa.me/919130375375`} className="whatsapp-float" target="_blank" rel="noopener noreferrer" style={{position:'fixed',bottom:'24px',right:'50px',zIndex:9999,background:'#25D366',color:'#fff',borderRadius:'50%',width:'60px',height:'60px',display:'flex',alignItems:'center',justifyContent:'center',boxShadow:'0 2px 8px rgba(0,0,0,0.2)'}} aria-label="Chat on WhatsApp">
+                <i className="fab fa-whatsapp" style={{fontSize:'2rem'}}></i>
+            </a>
         </>
     )
 }
