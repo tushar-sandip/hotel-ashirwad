@@ -351,11 +351,16 @@ I will visit again. Good job"
           font-weight: 600;
           box-shadow: 0 2px 8px rgba(37,211,102,0.10);
           margin-bottom: 1.5rem;
+          background: linear-gradient(90deg, #25D366 0%, #128C7E 100%);
+          color: #fff;
+          border: none;
+          transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
         }
         .btn-ashirwad.write-review-btn:hover {
           background: linear-gradient(90deg, #128C7E 0%, #25D366 100%);
           color: #fff;
           transform: translateY(-2px) scale(1.04);
+          box-shadow: 0 4px 16px rgba(18,140,126,0.15);
         }
         .testimonial-masonry {
           column-count: 3;
@@ -372,6 +377,14 @@ I will visit again. Good job"
           width: 100%;
           margin-bottom: 2.5rem;
           position: relative;
+          background: rgba(255,255,255,0.25);
+          border-radius: 1.5rem;
+          box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10);
+          border: 1.5px solid rgba(37,211,102,0.18);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          overflow: hidden;
+          transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
         }
         .testimonial-1-block::after {
           content: '';
@@ -379,47 +392,15 @@ I will visit again. Good job"
           inset: 0;
           border-radius: 1.5rem;
           pointer-events: none;
-          background: linear-gradient(120deg,rgba(37,211,102,0.04) 0%,rgba(18,140,126,0.03) 100%);
+          background: linear-gradient(120deg,rgba(37,211,102,0.07) 0%,rgba(18,140,126,0.05) 100%);
           z-index: 1;
         }
-        .testimonial-1-rating {
-          font-size: 1.3rem;
-          color: #25D366;
-          margin-bottom: 1rem;
-          letter-spacing: 2px;
-          opacity: 0;
-          transform: translateY(10px);
-          animation: fadeInStars 0.7s 0.5s forwards;
-        }
-        @keyframes fadeInStars {
-          to { opacity: 1; transform: none; }
-        }
-        .testimonial-1-subtitle {
-          color: #888;
-          font-size: 0.98rem;
-          font-weight: 500;
-          margin-bottom: 0.5rem;
-          text-align: center;
-        }
-        .testimonial-page .row {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2.5rem 2rem;
-          justify-content: center;
+        .testimonial-1-block:hover {
+          box-shadow: 0 16px 48px 0 #25D36633, 0 2px 8px rgba(37,211,102,0.16);
+          border: 1.5px solid #25D366;
+          transform: translateY(-8px) scale(1.045);
         }
         .testimonial-1-block {
-          background: #fff;
-          border-radius: 1.5rem;
-          box-shadow: 0 4px 24px rgba(37,211,102,0.08);
-          border-left: 6px solid #25D366;
-          padding: 2.5rem 2rem 2rem 2.5rem;
-          position: relative;
-          transition: box-shadow 0.2s, transform 0.2s;
-          min-height: 340px;
-          margin: 0 0 0.5rem 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           opacity: 0;
           transform: translateY(40px);
           animation: fadeInUp 0.7s ease forwards;
@@ -436,10 +417,6 @@ I will visit again. Good job"
         .testimonial-1-block:nth-child(10) { animation-delay: 0.68s; }
         .testimonial-1-block:nth-child(11) { animation-delay: 0.75s; }
         .testimonial-1-block:nth-child(12) { animation-delay: 0.82s; }
-        .testimonial-1-block:hover {
-          box-shadow: 0 12px 36px 0 #25D36633, 0 2px 8px rgba(37,211,102,0.16);
-          transform: translateY(-8px) scale(1.04);
-        }
         @keyframes fadeInUp {
           to {
             opacity: 1;
@@ -452,7 +429,7 @@ I will visit again. Good job"
           left: 1.2rem;
           font-size: 2.5rem;
           color: #25D36633;
-          z-index: 1;
+          z-index: 2;
         }
         .testimonial-1-block::before {
           content: "“";
@@ -472,18 +449,39 @@ I will visit again. Good job"
           margin-bottom: 1.5rem;
           line-height: 1.7;
           position: relative;
-          z-index: 2;
+          z-index: 3;
           text-align: center;
+        }
+        .testimonial-1-rating {
+          font-size: 1.3rem;
+          color: #25D366;
+          margin-bottom: 1rem;
+          letter-spacing: 2px;
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeInStars 0.7s 0.5s forwards;
+        }
+        @keyframes fadeInStars {
+          to { opacity: 1; transform: none; }
+        }
+        .testimonial-1-subtitle {
+          color: #25D366;
+          font-size: 1.01rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+          text-align: center;
+          letter-spacing: 0.5px;
         }
         .testimonial-1-author-thumb {
           margin: 0 auto 0.5rem auto;
-          width: 70px;
-          height: 70px;
+          width: 80px;
+          height: 80px;
           border-radius: 50%;
           overflow: hidden;
           border: 3px solid #25D366;
           box-shadow: 0 2px 8px rgba(37,211,102,0.10);
           animation: floatPhoto 3s ease-in-out infinite alternate;
+          z-index: 3;
         }
         @keyframes floatPhoto {
           to { transform: translateY(-8px) scale(1.05);}
@@ -496,16 +494,18 @@ I will visit again. Good job"
         }
         .testimonial-1-name {
           font-weight: 700;
-          font-size: 1.1rem;
+          font-size: 1.18rem;
           color: #128C7E;
           margin-bottom: 0.2rem;
           text-align: center;
+          z-index: 3;
         }
-        /* Add star rating below each name */
+        .testimonial-1-name + .testimonial-1-subtitle {
+          margin-top: 0.1rem;
+        }
         .testimonial-1-name + .testimonial-1-rating {
           margin-top: 0.2rem;
         }
-        /* Fade-in animation for section heading */
         .section_heading {
           opacity: 0;
           transform: translateY(30px);
@@ -522,20 +522,28 @@ I will visit again. Good job"
           }
         }
         @media (max-width: 767px) {
-          .testimonial-page .row {
-            gap: 1.2rem 0.3rem;
-          }
+          .testimonial-masonry { column-count: 1; }
           .testimonial-1-block {
             min-height: 240px;
             padding: 1.2rem 0.5rem 1rem 1rem;
             width: 100%;
             min-width: 0;
+            margin-bottom: 1.2rem;
           }
         }
         @media (max-width: 600px) {
           .testimonial-1-block {
             width: 100%;
             min-width: 0;
+            padding: 1.1rem 0.3rem 0.8rem 0.7rem;
+          }
+        }
+        /* Touch feedback for mobile */
+        @media (hover: none) and (pointer: coarse) {
+          .testimonial-1-block:active {
+            box-shadow: 0 8px 32px 0 #25D36633, 0 2px 8px rgba(37,211,102,0.16);
+            transform: scale(0.98);
+            border: 1.5px solid #128C7E;
           }
         }
       `}</style>
