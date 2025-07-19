@@ -40,8 +40,8 @@ export default function Footer1() {
                                     <div className="footer-widget-title"><h4>Links</h4></div>
                                     <ul className="link-widget-1-list">
                                         <li><Link href="/about-us">About Us</Link></li>
-                                        <li><Link href="/event-details">Services</Link></li>
-                                        <li><Link href="/faq">Case</Link></li>
+                                        {/* <li><Link href="/event-details">Services</Link></li>
+                                        <li><Link href="/faq">Case</Link></li> */}
                                         <li><Link href="/contact">Contact Us</Link></li>
                                     </ul>
                                 </div>

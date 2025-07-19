@@ -1,6 +1,8 @@
 {
+  "/page": "app/page.js",
+  "/about-us/page": "app/about-us/page.js",
   "/amenities/page": "app/amenities/page.js",
-  "/gallery/page": "app/gallery/page.js",
   "/food/page": "app/food/page.js",
-  "/page": "app/page.js"
+  "/team/page": "app/team/page.js",
+  "/testimonials/page": "app/testimonials/page.js"
 }
