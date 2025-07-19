@@ -16,7 +16,7 @@ export default function Home() {
     const childrenRef = useRef()
 
     // WhatsApp number (replace with real one)
-    const whatsappNumber = '+919999999999'
+    const whatsappNumber = '+919130375375'
 
     // Handle reservation form submit
     const handleReservation = (e) => {
