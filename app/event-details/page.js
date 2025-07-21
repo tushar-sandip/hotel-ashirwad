@@ -50,7 +50,7 @@ export default function Home() {
                                 Consectetur adipiscing elit. Libero turpis blandit blandit mauris aliquam condimentum suspendisse. Sit bibendum adipiscing enim lacus quis. A nec accumsan aliquam magnis orci. Dui amet scelerisque lectus commodo iaculis semper arcu eget vestibulum amet
                             </p>
                             <div className="service-details-map mb-30">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3071.2910802067827!2d90.45905169331171!3d23.691532202989123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1577214205224!5m2!1sen!2sbd" width="600" height="390" style={{ border: 0, width: '100%' }} allowFullScreen=""></iframe>
+                                <iframe src="https://www.google.com/maps/place/Hotel+Ashirwad/@19.0362647,73.8454066,17z/data=!4m14!1m7!3m6!1s0x3bdd3800ef4bf4f5:0xe1642ebcd07a4c88!2sHotel+Ashirwad!8m2!3d19.039955!4d73.8440164!16s%2Fg%2F11dxss1cmf!3m5!1s0x3bdd390065b26a65:0x4971f275bb3e108e!8m2!3d19.0368366!4d73.8478228!16s%2Fg%2F11m59q_5wr?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3Dembed?pb=!1m14!1m12!1m3!1d3071.2910802067827!2d90.45905169331171!3d23.691532202989123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1577214205224!5m2!1sen!2sbd" width="600" height="390" style={{ border: 0, width: '100%' }} allowFullScreen=""></iframe>
                             </div>
                             </div>
                         </div>
