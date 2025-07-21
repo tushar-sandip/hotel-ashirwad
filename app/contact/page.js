@@ -58,8 +58,8 @@ export default function ContactPage() {
               <div>
                 <span>Email</span>
                 <p>
-                  <Link href="mailto:dhananjayphalke7058@gmail.com">
-                    dhananjayphalke7058@gmail.com
+                  <Link href="mailto:hotelashirwadlodging@gmail.com">
+                    hotelashirwadlodging@gmail.com
                   </Link>
                 </p>
               </div>

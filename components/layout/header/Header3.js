@@ -10,7 +10,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
         <div className="header-top-1-row d-flex align-items-center justify-content-between">
           <div className="header-top-1-left-column">
             <ul className="header-top-1-contact-info d-flex align-items-center">
-              <li><a href="mailto:dhananjayphalke7058@gmail.com">dhananjayphalke7058@gmail.com</a></li>
+              <li><a href="mailto:hotelashirwadlodging@gmail.com">hotelashirwadlodging@gmail.com</a></li>
               <li><a href="tel:+91-213-666-0027">+91-9130375375</a></li>
               <li><a href="tel:+91-213-666-0027">+91-9738375375</a></li>
             </ul>

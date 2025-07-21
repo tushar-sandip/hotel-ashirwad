@@ -24,7 +24,7 @@ export default function Footer1() {
                                     <div className="footer-widget-title"><h4>Contact Us</h4></div>
                                     <ul className="contact-widget-1-list">
                                         <li><span>Add:</span> Bhimashankar Road, Ambegaon, Maharashtra 412408</li>
-                                        <li><span>Email:</span><Link href="mailto:dhananjayphalke7058@gmail.com">dhananjayphalke7058@gmail.com</Link></li>
+                                        <li><span>Email:</span><Link href="mailto:hotelashirwadlodging@gmail.com">hotelashirwadlodging@gmail.com</Link></li>
                                         <li><span>Phone:</span><Link href="tel:9130375375">9130375375</Link></li>
                                     </ul>
                                     <div className="footer-social-icon d-flex align-items-center">
