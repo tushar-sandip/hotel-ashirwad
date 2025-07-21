@@ -1,7 +1,9 @@
 {
-  "/page": "app/page.js",
-  "/amenities/page": "app/amenities/page.js",
+  "/room/page": "app/room/page.js",
   "/about-us/page": "app/about-us/page.js",
   "/team/page": "app/team/page.js",
-  "/room/page": "app/room/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/booking/page": "app/booking/page.js",
+  "/not-found": "app/not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
