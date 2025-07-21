@@ -19,16 +19,18 @@ export default function ContactPage() {
   };
 
   return (
+    
     <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Contact Us">
       <div className={styles["contact-float-root"]}>
         <div className={styles["contact-map-bg"]}>
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps?ll=19.037124,73.847784&z=19&t=m&hl=en-IN&gl=US&mapclient=apiv3&cid=5292277624603545742embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f1b3%3A0x5045675218ceed0!2sBhimashankar%20Road%2C%20Ambegaon%2C%20Maharashtra%20412408!5e0!3m2!1sen!2sin!4v1616161616161!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f1b3%3A0x5045675218ceed0!2sBhimashankar%20Road%2C%20Ambegaon%2C%20Maharashtra%20412408!5e0!3m2!1sen!2sin!4v1616161616161!5m2!1sen!2sin"
             allowFullScreen=""
             aria-hidden="false"
             tabIndex="0"
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div className={styles["contact-float-card"]}>

@@ -1,9 +1,9 @@
 {
   "/room/page": "app/room/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/team/page": "app/team/page.js",
   "/contact/page": "app/contact/page.js",
   "/booking/page": "app/booking/page.js",
+  "/room-details-delux/page": "app/room-details-delux/page.js",
+  "/room-details-VIP/page": "app/room-details-VIP/page.js",
   "/not-found": "app/not-found.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

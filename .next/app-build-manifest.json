@@ -76,6 +76,18 @@
       "static/chunks/main-app.js",
       "static/css/app/booking/page.css",
       "static/chunks/app/booking/page.js"
+    ],
+    "/room-details-delux/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/room-details-delux/page.css",
+      "static/chunks/app/room-details-delux/page.js"
+    ],
+    "/room-details-VIP/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/room-details-VIP/page.css",
+      "static/chunks/app/room-details-VIP/page.js"
     ]
   }
 }

@@ -50,10 +50,19 @@ export default function Home() {
                                 Consectetur adipiscing elit. Libero turpis blandit blandit mauris aliquam condimentum suspendisse. Sit bibendum adipiscing enim lacus quis. A nec accumsan aliquam magnis orci. Dui amet scelerisque lectus commodo iaculis semper arcu eget vestibulum amet
                             </p>
                             <div className="service-details-map mb-30">
-                                <iframe src="https://www.google.com/maps?ll=19.037124,73.847784&z=19&t=m&hl=en-IN&gl=US&mapclient=apiv3&cid=5292277624603545742embed?pb=!1m14!1m12!1m3!1d3071.2910802067827!2d90.45905169331171!3d23.691532202989123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1577214205224!5m2!1sen!2sbd" width="600" height="390" style={{ border: 0, width: '100%' }} allowFullScreen=""></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f1b3%3A0x5045675218ceed0!2sBhimashankar%20Road%2C%20Ambegaon%2C%20Maharashtra%20412408!5e0!3m2!1sen!2sin!4v1616161616161!5m2!1sen!2sin"
+                                    width="600"
+                                    height="390"
+                                    style={{ border: 0, width: '100%' }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                             </div>
                             </div>
                         </div>
+                        
                         <div className="col-lg-4 ps-lg-40">
                             <div className="event-info-widget mb_30">
                             <h4 className="theme-bg color_light p_16 pl_30">Event Details</h4>
