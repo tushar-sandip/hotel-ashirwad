@@ -6,6 +6,7 @@ import { useState, useRef } from 'react'
 import ModalVideo from 'react-modal-video'
 import TestimonialSlider7 from '@/components/slider/TestimonialSlider7'
 
+
 export default function Home() {
     const [isOpen, setOpen] = useState(false)
     // Reservation form refs
