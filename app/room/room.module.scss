@@ -1,13 +1,39 @@
-.roomCard {
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+// ========================================
+// MODERN ROOM PAGE STYLES - 2024 LATEST
+// ========================================
+
+// CSS Custom Properties (CSS Variables) - Moved to global CSS file
+// Variables are now defined in assets/css/style.css and public/assets/css/style.css
+
+// Page Container
+.pageContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+// Rooms Section
+.roomsSection {
+  position: relative;
   overflow: hidden;
-  margin-bottom: 32px;
-  background: #fff;
-  &:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 152, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(102, 126, 234, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  > * {
+    position: relative;
+    z-index: 1;
   }
 }
 .roomImage {
@@ -78,57 +104,236 @@
   font-size: 0.95rem;
 }
 
-// Modern Room Section Header
+// ========================================
+// SECTION HEADER - MODERN 2024
+// ========================================
+
 .sectionHeader {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+    opacity: 0.8;
+  }
 }
+
 .sectionTitle {
-  font-size: 2.6rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  letter-spacing: -1px;
-  color: #222;
-  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.1;
+  background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  @supports not (-webkit-background-clip: text) {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #1a1a1a;
+  }
 }
+
+.titleAccent {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+    opacity: 0.3;
+  }
+}
+
 .sectionDivider {
-  width: 64px;
+  width: 80px;
   height: 4px;
-  margin: 0 auto 16px auto;
-  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  margin: 0 auto var(--spacing-md) auto;
+  background: var(--primary-gradient);
   border-radius: 2px;
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+  }
+  
+  &::before {
+    left: -20px;
+  }
+  
+  &::after {
+    right: -20px;
+  }
 }
+
 .sectionSubtitle {
   color: #666;
-  font-size: 1.15rem;
-  max-width: 500px;
-  margin: 0 auto;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl) auto;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-// Modern Room Grid
+// Stats Container
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.statItem {
+  text-align: center;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-normal);
+  
+  &:hover {
+    background: rgba(255, 107, 53, 0.05);
+    transform: translateY(-2px);
+  }
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff6b35;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// ========================================
+// MODERN ROOM GRID - 2024 LATEST
+// ========================================
+
 .roomGridModern {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 40px 32px;
-  margin-top: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
   position: relative;
-  padding: 48px 0;
-  background: linear-gradient(135deg, #fff7e6 0%, #f8fafc 100%);
-  border-radius: 32px;
-  box-shadow: 0 8px 48px rgba(255,152,0,0.07);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%),
+    radial-gradient(circle at 20% 20%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 152, 0, 0.05) 0%, transparent 50%);
+  border-radius: var(--border-radius-xl);
+  box-shadow: 
+    var(--shadow-lg),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   overflow: visible;
-
-  // Animated floating SVG pattern overlay
-  &::after {
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  // Modern animated background pattern
+  &::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background: url('data:image/svg+xml;utf8,<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="40" fill="%23ff9800" fill-opacity="0.07"/><circle cx="300" cy="300" r="60" fill="%23ff5722" fill-opacity="0.06"/><circle cx="320" cy="80" r="24" fill="%232196f3" fill-opacity="0.07"/><circle cx="60" cy="320" r="18" fill="%23e91e63" fill-opacity="0.07"/></svg>');
-    background-size: 400px 400px;
-    background-repeat: repeat;
-    animation: floatPattern 18s linear infinite;
-    opacity: 0.7;
+    background: 
+      url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="2" fill="%23ff6b35" fill-opacity="0.1"/><circle cx="10" cy="10" r="1" fill="%23ff9800" fill-opacity="0.15"/><circle cx="50" cy="50" r="1.5" fill="%23667eea" fill-opacity="0.1"/></svg>'),
+      url('data:image/svg+xml;utf8,<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 0L80 40L120 40L90 70L100 110L60 90L20 110L30 70L0 40L40 40L60 0Z" fill="%23ff6b35" fill-opacity="0.03"/></svg>');
+    background-size: 60px 60px, 120px 120px;
+    background-position: 0 0, 30px 30px;
+    animation: 
+      floatPattern 20s linear infinite,
+      rotatePattern 30s linear infinite;
+    opacity: 0.6;
+  }
+  
+  // Subtle border animation
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    background: var(--primary-gradient);
+    border-radius: var(--border-radius-xl);
+    opacity: 0;
+    transition: opacity var(--transition-slow);
+  }
+  
+  &:hover::after {
+    opacity: 0.1;
+  }
+}
+
+@keyframes floatPattern {
+  0%, 100% { 
+    background-position: 0 0, 30px 30px;
+    transform: translateY(0);
+  }
+  50% { 
+    background-position: 30px 30px, 60px 60px;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotatePattern {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// Room Card Wrapper
+.roomCardWrapper {
+  position: relative;
+  z-index: 1;
+  transition: var(--transition-normal);
+  
+  &:hover {
+    z-index: 2;
   }
 }
 @keyframes floatPattern {
@@ -201,107 +406,292 @@
   opacity: 0.12;
 }
 
-// Modern Room Card
+// ========================================
+// MODERN ROOM CARD - 2024 LATEST
+// ========================================
+
 .cardFadeIn {
-  animation: fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(40px) scale(0.98); }
-  60% { opacity: 1; transform: translateY(-8px) scale(1.03); }
-  100% { opacity: 1; transform: none; }
+  0% { 
+    opacity: 0; 
+    transform: translateY(60px) scale(0.95);
+    filter: blur(4px);
+  }
+  60% { 
+    opacity: 1; 
+    transform: translateY(-12px) scale(1.02);
+    filter: blur(0);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
+
 .roomCardNew {
-  background: rgba(255,255,255,0.85);
-  border-radius: 22px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 
+    var(--shadow-md),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 480px;
-  transition: box-shadow 0.25s cubic-bezier(.39,.575,.565,1), transform 0.25s cubic-bezier(.39,.575,.565,1);
+  min-height: 520px;
+  transition: 
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal),
+    backdrop-filter var(--transition-normal);
   position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  // Modern hover effects
   &:hover {
-    box-shadow: 0 24px 64px rgba(255,152,0,0.22), 0 2px 16px rgba(0,0,0,0.10);
-    transform: translateY(-8px) scale(1.045);
+    box-shadow: 
+      0 32px 80px rgba(255, 107, 53, 0.15),
+      0 8px 32px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: translateY(-12px) scale(1.02);
+    backdrop-filter: blur(20px);
+    
+    // Subtle glow effect
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  // Glow effect on hover
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    background: var(--primary-gradient);
+    border-radius: var(--border-radius-lg);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    filter: blur(8px);
+  }
+  
+  // Focus states for accessibility
+  &:focus-within {
+    outline: 2px solid #ff6b35;
+    outline-offset: 4px;
   }
 }
+// ========================================
+// IMAGE SECTION - MODERN 2024
+// ========================================
+
 .imageSection {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 240px;
   overflow: hidden;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+  border-top-left-radius: var(--border-radius-lg);
+  border-top-right-radius: var(--border-radius-lg);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  
+  // Modern image loading state
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    z-index: 1;
+  }
+  
+  &.loaded::before {
+    display: none;
+  }
 }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
 .roomImageNew {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+  border-top-left-radius: var(--border-radius-lg);
+  border-top-right-radius: var(--border-radius-lg);
+  transition: transform var(--transition-slow);
+  
+  .roomCardNew:hover & {
+    transform: scale(1.05);
+  }
 }
+
 .imageGradientOverlayNew {
   position: absolute;
-  left: 0; right: 0; bottom: 0; top: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.22) 100%);
+  inset: 0;
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%),
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
   pointer-events: none;
+  z-index: 2;
+  transition: opacity var(--transition-normal);
+  
+  .roomCardNew:hover & {
+    opacity: 0.8;
+  }
 }
+// ========================================
+// BADGES - MODERN 2024
+// ========================================
+
 .badgeRowNew {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);
   z-index: 3;
 }
+
 .badgeNew {
-  display: inline-block;
-  padding: 5px 14px;
-  border-radius: 16px;
-  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  font-size: 0.85rem;
   font-weight: 700;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  letter-spacing: 0.5px;
-  animation: popBadge 0.5s cubic-bezier(.39,.575,.565,1);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: popBadge 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  
+  // Shimmer effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  &:hover::before {
+    left: 100%;
+  }
 }
+
 @keyframes popBadge {
-  0% { opacity: 0; transform: scale(0.7) translateY(-10px); }
-  60% { opacity: 1; transform: scale(1.15) translateY(2px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
+  0% { 
+    opacity: 0; 
+    transform: scale(0.6) translateY(-15px) rotate(-5deg);
+    filter: blur(2px);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.1) translateY(2px) rotate(2deg);
+    filter: blur(0);
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1) translateY(0) rotate(0deg);
+    filter: blur(0);
+  }
 }
-.discountBadgeNew { background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%); }
-.bestSellerBadgeNew { background: #e91e63; }
-.newBadgeNew { background: #2196f3; }
+
+.discountBadgeNew { 
+  background: var(--primary-gradient);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(255, 107, 53, 0.3);
+}
+
+.bestSellerBadgeNew { 
+  background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(233, 30, 99, 0.3);
+}
+
+.newBadgeNew { 
+  background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(33, 150, 243, 0.3);
+}
+
+// ========================================
+// PRICING - MODERN 2024
+// ========================================
 
 .priceTagNew {
   position: absolute;
-  bottom: 18px;
-  left: 18px;
-  background: rgba(255,255,255,0.92);
-  border-radius: 16px;
-  padding: 7px 18px;
-  font-size: 1.08rem;
+  bottom: var(--spacing-md);
+  left: var(--spacing-md);
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 1.1rem;
   font-weight: 700;
   color: #ff5722;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-xs);
   z-index: 3;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition-normal);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      var(--shadow-md),
+      0 0 0 1px rgba(255, 255, 255, 0.4);
+  }
 }
+
 .oldPriceNew {
   text-decoration: line-through;
-  color: #bbb;
-  font-size: 1rem;
-  margin-right: 6px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.8;
 }
+
 .currentPriceNew {
   color: #ff5722;
   font-weight: 800;
-  font-size: 1.13rem;
+  font-size: 1.15rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  @supports not (-webkit-background-clip: text) {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #ff5722;
+  }
 }
 .contentSection {
   flex: 1;
@@ -366,40 +756,320 @@
   display: flex;
   justify-content: flex-end;
 }
+// ========================================
+// MODERN BUTTONS - 2024 LATEST
+// ========================================
+
 .bookNowBtnNew {
-  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  background: var(--primary-gradient);
   color: #fff !important;
-  border-radius: 24px;
-  padding: 10px 28px;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
   font-weight: 700;
-  font-size: 1.08rem;
-  box-shadow: 0 2px 8px rgba(255,152,0,0.10);
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  font-size: 1.1rem;
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 0 1px rgba(255, 107, 53, 0.2);
+  transition: 
+    background var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
   text-decoration: none;
-  letter-spacing: 0.5px;
-  &:hover {
-    background: linear-gradient(90deg, #ff5722 0%, #ff9800 100%);
-    box-shadow: 0 6px 24px rgba(255,152,0,0.18);
-    transform: scale(1.04);
-    animation: pulseBtn 0.5s;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  
+  // Shimmer effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
   }
-}
-@keyframes pulseBtn {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1.04); }
+  
+  &:hover {
+    background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+    box-shadow: 
+      var(--shadow-md),
+      0 0 0 1px rgba(255, 107, 53, 0.3);
+    transform: translateY(-2px) scale(1.02);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+  
+  // Focus states
+  &:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+  }
 }
 
-// Responsive
-@media (max-width: 600px) {
+.btnText {
+  position: relative;
+  z-index: 2;
+}
+
+.btnIcon {
+  position: relative;
+  z-index: 2;
+  transition: transform var(--transition-fast);
+  
+  .bookNowBtnNew:hover & {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes pulseBtn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1.02); }
+}
+
+// ========================================
+// SECTION FOOTER - MODERN 2024
+// ========================================
+
+.sectionFooter {
+  text-align: center;
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-xl) 0;
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.6) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerText {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.ctaContainer {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primaryCta {
+  background: var(--primary-gradient);
+  color: #fff !important;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+}
+
+.secondaryCta {
+  color: #64748b !important;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: 2px solid #e2e8f0;
+  transition: var(--transition-normal);
+  
+  &:hover {
+    color: #ff6b35 !important;
+    border-color: #ff6b35;
+    background: rgba(255, 107, 53, 0.05);
+    transform: translateY(-2px);
+  }
+}
+
+.ctaIcon {
+  transition: transform var(--transition-fast);
+  
+  .primaryCta:hover & {
+    transform: translateX(3px);
+  }
+}
+
+// ========================================
+// RESPONSIVE DESIGN - MODERN 2024
+// ========================================
+
+// Mobile First Approach
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .sectionSubtitle {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .statsContainer {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+  }
+  
   .roomGridModern {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-sm);
   }
-  .contentSection {
-    padding: 18px 10px 16px 10px;
-  }
+  
   .roomCardNew {
-    min-height: 400px;
+    min-height: 450px;
+  }
+  
+  .contentSection {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+  
+  .ctaContainer {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .primaryCta,
+  .secondaryCta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .roomGridModern {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .statsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .roomGridModern {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 1025px) {
+  .roomGridModern {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--spacing-xl);
+  }
+}
+
+// High DPI Displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .roomImageNew {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+// Reduced Motion
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .roomCardNew:hover {
+    transform: none;
+  }
+  
+  .badgeNew {
+    animation: none;
+  }
+}
+
+// Dark Mode Support
+@media (prefers-color-scheme: dark) {
+  .roomCardNew {
+    background: 
+      linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(45, 45, 45, 0.85) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sectionTitle {
+    color: #ffffff;
+  }
+  
+  .sectionSubtitle {
+    color: #a1a1aa;
+  }
+  
+  .statsContainer {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Print Styles
+@media print {
+  .roomGridModern {
+    display: block;
+  }
+  
+  .roomCardNew {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .badgeNew,
+  .priceTagNew {
+    background: #f0f0f0 !important;
+    color: #000 !important;
   }
 }

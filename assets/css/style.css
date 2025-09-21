@@ -47,8 +47,43 @@
 @import url('./rtl.css');
 @import url('./swiper.min.css');
 
-
-
+/* ============================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   ============================================ */
+:root {
+  --primary-gradient: linear-gradient(135deg, #ff6b35 0%, #ff9800 100%);
+  --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.20);
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 32px;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal: 1040;
+  --z-index-popover: 1050;
+  --z-index-tooltip: 1060;
+}
 
 /*** 
 ====================================================================
@@ -419,15 +454,35 @@ a.btn-1.btn-alt {
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     padding: 16px 35px 15px;
+    transition: all 0.3s ease;
 }
 
 a.btn-1.btn-alt:hover {
     color: #fff;
+    background: var(--theme-color) !important;
     border-color: var(--theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(179, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
 .btn-1.btn-alt span {
     background: var(--theme-color);
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+}
+
+a.btn-1.btn-alt:hover span {
+    width: 225%;
+    height: 562.5px;
 }
 
 /* Header Style */
@@ -2610,7 +2665,7 @@ p.room-1-meta-info {
 .project-1-image {
     min-height: 799px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     background-size: cover;
 	margin: 0 35px;

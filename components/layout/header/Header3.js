@@ -60,11 +60,39 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             </div>
                         </div>
                         <div className="right-column d-flex align-items-center">
-                            <button type="button" className="theme-btn search-toggler">
-                            <li className="search-box-outer search-toggler" onClick={handlePopup}><i className="icon-1"></i></li>
-                            </button>
                             <div className="header-link-btn">
-                            <Link href="/booking" className="btn-1 btn-small btn-alt">
+                            <Link href="/booking" className="btn-1 btn-modern btn-header" style={{
+                                background: 'linear-gradient(135deg, #b30000 0%, #ff6b35 100%)',
+                                color: 'white',
+                                padding: '14px 28px',
+                                borderRadius: '30px',
+                                textDecoration: 'none',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                minWidth: '160px',
+                                height: '48px',
+                                fontWeight: '700',
+                                fontSize: '14px',
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.8px',
+                                boxShadow: '0 6px 20px rgba(179, 0, 0, 0.35)',
+                                transition: 'all 0.4s ease',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                border: 'none',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.target.style.transform = 'translateY(-3px) scale(1.02)';
+                                e.target.style.boxShadow = '0 12px 35px rgba(179, 0, 0, 0.5)';
+                                e.target.style.background = 'linear-gradient(135deg, #ff6b35 0%, #b30000 100%)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.transform = 'translateY(0) scale(1)';
+                                e.target.style.boxShadow = '0 6px 20px rgba(179, 0, 0, 0.35)';
+                                e.target.style.background = 'linear-gradient(135deg, #b30000 0%, #ff6b35 100%)';
+                            }}>
                                 Book Your Stay <span></span>
                             </Link>
                             </div>
@@ -108,7 +136,38 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             </div>
                             <div className="right-column d-flex align-items-center">
                             <div className="header-link-btn">
-                                <Link href="/booking" className="btn-1 btn-small btn-alt">
+                                <Link href="/booking" className="btn-1 btn-modern btn-header" style={{
+                                    background: 'linear-gradient(135deg, #b30000 0%, #ff6b35 100%)',
+                                    color: 'white',
+                                    padding: '14px 28px',
+                                    borderRadius: '30px',
+                                    textDecoration: 'none',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    minWidth: '160px',
+                                    height: '48px',
+                                    fontWeight: '700',
+                                    fontSize: '14px',
+                                    textTransform: 'uppercase',
+                                    letterSpacing: '0.8px',
+                                    boxShadow: '0 6px 20px rgba(179, 0, 0, 0.35)',
+                                    transition: 'all 0.4s ease',
+                                    position: 'relative',
+                                    overflow: 'hidden',
+                                    border: 'none',
+                                    cursor: 'pointer'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.target.style.transform = 'translateY(-3px) scale(1.02)';
+                                    e.target.style.boxShadow = '0 12px 35px rgba(179, 0, 0, 0.5)';
+                                    e.target.style.background = 'linear-gradient(135deg, #ff6b35 0%, #b30000 100%)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.style.transform = 'translateY(0) scale(1)';
+                                    e.target.style.boxShadow = '0 6px 20px rgba(179, 0, 0, 0.35)';
+                                    e.target.style.background = 'linear-gradient(135deg, #b30000 0%, #ff6b35 100%)';
+                                }}>
                                 Book Your Stay <span></span>
                                 </Link>
                             </div>

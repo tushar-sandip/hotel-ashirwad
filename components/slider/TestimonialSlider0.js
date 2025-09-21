@@ -1,7 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import 'swiper/css'; // Import Swiper styles
 
 const blogItems = [
     {

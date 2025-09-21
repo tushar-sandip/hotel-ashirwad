@@ -27,7 +27,7 @@ export default function Offer() {
                   business or leisure, Ashirwad Hotel ensures a memorable stay.
                 </p>
                 <div className="offer-1-btn mb_30">
-                  <a href="" className="btn-1">
+                  <a href="/about" className="btn-1 btn-modern">
                     Discover More<span></span>
                   </a>
                 </div>
@@ -62,7 +62,7 @@ export default function Offer() {
                   </li>
                 </ul>
                 <div className="offer-1-btn mb_30">
-                  <a href="" className="btn-1">
+                  <a href="/booking" className="btn-1 btn-modern btn-secondary">
                     Book A Stay<span></span>
                   </a>
                 </div>

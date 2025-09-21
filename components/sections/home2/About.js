@@ -14,7 +14,7 @@ export default function About() {
                         </div>
                         <p className="aboout-1-desc mb_30">Located on Bhimashankar Road, Hotel Ashirwad offers a perfect mix of luxury and nature. Enjoy spacious rooms, exceptional service, and breathtaking mountain views for a truly memorable stay.</p>
                         <div className="about-1-btn mb_30">
-                        <Link href="/about" className="btn-1">Discover More<span></span></Link>
+                        <Link href="/about-us" className="btn-1 btn-modern">Discover More<span></span></Link>
                         </div>
                     </div>
                     <div className="col-lg-6 ps-lg-5">

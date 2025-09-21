@@ -74,29 +74,71 @@ export default function Home() {
   return (
     <>
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Room Style">
-        <div>
-          <section className="section-padding" style={{ background: "linear-gradient(135deg, #f8fafc 60%, #fff 100%)" }}>
+        <main role="main" className={styles.pageContainer}>
+          <section 
+            className={`section-padding ${styles.roomsSection}`} 
+            aria-labelledby="rooms-heading"
+            style={{ background: "linear-gradient(135deg, #f8fafc 60%, #fff 100%)" }}
+          >
             <div className="auto-container">
-              <div className={styles.sectionHeader}>
-                <h2 className={styles.sectionTitle}>Our Rooms</h2>
-                <div className={styles.sectionDivider}></div>
+              <header className={styles.sectionHeader}>
+                <h1 id="rooms-heading" className={styles.sectionTitle}>
+                  Our <span className={styles.titleAccent}>Premium</span> Rooms
+                </h1>
+                <div className={styles.sectionDivider} aria-hidden="true"></div>
                 <p className={styles.sectionSubtitle}>
                   Discover comfort and luxury in every room. Choose the perfect stay for your visit.
                 </p>
-              </div>
-              <div className={styles.roomGridModern}>
+                <div className={styles.statsContainer}>
+                  <div className={styles.statItem}>
+                    <span className={styles.statNumber}>4</span>
+                    <span className={styles.statLabel}>Room Types</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statNumber}>5★</span>
+                    <span className={styles.statLabel}>Average Rating</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statNumber}>85+</span>
+                    <span className={styles.statLabel}>Happy Guests</span>
+                  </div>
+                </div>
+              </header>
+              
+              <div className={styles.roomGridModern} role="grid" aria-label="Available rooms">
                 {roomData.map((room, index) => (
-                  <React.Fragment key={index}>
-                    <RoomCard room={room} />
-                    {index < roomData.length - 1 && <hr className={styles.roomDividerNew} />}
-                  </React.Fragment>
+                  <article 
+                    key={room.title} 
+                    className={styles.roomCardWrapper}
+                    role="gridcell"
+                    aria-labelledby={`room-title-${index}`}
+                  >
+                    <RoomCard room={room} index={index} />
+                    {index < roomData.length - 1 && (
+                      <hr className={styles.roomDividerNew} aria-hidden="true" />
+                    )}
+                  </article>
                 ))}
               </div>
+              
+              <footer className={styles.sectionFooter}>
+                <p className={styles.footerText}>
+                  All rooms include complimentary Wi-Fi, air conditioning, and 24/7 room service.
+                </p>
+                <div className={styles.ctaContainer}>
+                  <Link href="/booking" className={styles.primaryCta}>
+                    Book Your Stay Now
+                    <span className={styles.ctaIcon} aria-hidden="true">→</span>
+                  </Link>
+                  <Link href="/contact" className={styles.secondaryCta}>
+                    Contact Us
+                  </Link>
+                </div>
+              </footer>
             </div>
           </section>
-        </div>
+        </main>
       </Layout>
     </>
   );
-  
 }

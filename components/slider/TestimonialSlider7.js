@@ -159,7 +159,6 @@ const swiperOptions = {
 export default function TestimonialSlider7() {
     return (
         <>
-
             <Swiper {...swiperOptions} className="swiper-container single-item-carousel">
                 {testimonials.map((testimonial, index) => (
                     <SwiperSlide key={index} className="swiper-slide">
@@ -177,16 +176,17 @@ export default function TestimonialSlider7() {
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className="owl-nav">
-                    <button type="button" className="owl-prev h1p">
-                        <span>‹</span>
-                    </button>
-                    <button type="button" className="owl-next h1n">
-                        <span>›</span>
-                    </button>
-                </div>
             </Swiper>
-
+            
+            {/* Navigation buttons outside Swiper container */}
+            <div className="owl-nav">
+                <button type="button" className="owl-prev h1p">
+                    <span>‹</span>
+                </button>
+                <button type="button" className="owl-next h1n">
+                    <span>›</span>
+                </button>
+            </div>
         </>
     )
 }
