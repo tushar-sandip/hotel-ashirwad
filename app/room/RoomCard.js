@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import styles from "./room.module.scss";
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 
 // Emoji icons for amenities (replace with react-icons if you want)
 const amenityIcons = {
@@ -27,6 +28,14 @@ export default function RoomCard({ room, index }) {
       ? Math.round(100 - (Number(room.startingPrice) / Number(room.oldPrice)) * 100)
       : null;
 
+  const initialSrc = useMemo(() => {
+    if (!room?.imageSrc) return "/assets/images/compressed/sideEntrance1.jpg";
+    return room.imageSrc.startsWith("/") ? room.imageSrc : `/${room.imageSrc}`;
+  }, [room?.imageSrc]);
+
+  const [imgSrc, setImgSrc] = useState(initialSrc);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <article 
       className={`${styles.cardFadeIn} ${styles.roomCardNew}`}
@@ -34,13 +43,19 @@ export default function RoomCard({ room, index }) {
       itemType="https://schema.org/HotelRoom"
       aria-labelledby={`room-title-${index}`}
     >
-      <div className={styles.imageSection}>
+      <div className={styles.imageSection} data-loaded={imageLoaded ? 'true' : 'false'}>
         <img 
-          src={room.imageSrc} 
+          src={imgSrc} 
           alt={`${room.title} - Premium hotel room`} 
           className={styles.roomImageNew}
           loading="lazy"
           itemProp="image"
+          onLoad={() => setImageLoaded(true)}
+          onError={() => {
+            if (imgSrc !== "/assets/images/compressed/sideEntrance1.jpg") {
+              setImgSrc("/assets/images/compressed/sideEntrance1.jpg");
+            }
+          }}
         />
         <div className={styles.imageGradientOverlayNew} aria-hidden="true"></div>
         

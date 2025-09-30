@@ -6,7 +6,7 @@ import RoomCard from "./RoomCard";
 import React from "react";
 const roomData = [
   {
-    imageSrc: "assets/images/gallery/room20.jpg",
+    imageSrc: "/assets/images/compressed/room14.jpg",
     startingPrice: "3700.0",
     rating: 5,
     title: "Luxury Double Bed Room",
@@ -20,7 +20,7 @@ const roomData = [
     reviews: 32,
   },
   {
-    imageSrc: "assets/images/gallery/room5.jpg",
+    imageSrc: "/assets/images/compressed/room9.jpg",
     startingPrice: "3700.0",
     rating: 5,
     title: "VIP Single Bed Room",
@@ -34,7 +34,7 @@ const roomData = [
     reviews: 15,
   },
   {
-    imageSrc: "assets/images/gallery/room11.jpg",
+    imageSrc: "/assets/images/compressed/room11.jpg",
     startingPrice: "3200.0",
     rating: 5,
     title: "Delux Single Bed Room",
@@ -48,7 +48,7 @@ const roomData = [
     reviews: 28,
   },
   {
-    imageSrc: "assets/images/gallery/room3.jpg",
+    imageSrc: "/assets/images/compressed/room13.jpg",
     startingPrice: "2700.0",
     rating: 5,
     title: "Single Bed Room",
