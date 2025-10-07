@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,77 +13,31 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    image: "/assets/images/main-slider/banner-1.jpg",
+    image: "/assets/images/compressed/banner-1.jpg",
     title: "Where Every Stay is a Story",
-    subtitle: "Summer Vacations",
+    subtitle: "Ghodegaon, near Manchar • Close to Bhimashankar",
     description: "Where Nature Meets Luxury: Stay at Hotel Ashirwad"
   },
   {
     id: 2,
-    image: "/assets/images/main-slider/banner-2.jpg",
+    image: "/assets/images/compressed/banner-2.jpg",
     title: "Experience Tranquility in Splendor",
-    subtitle: "Summer Vacations",
+    subtitle: "Ghodegaon, Pune – Pure Veg Lodging",
     description: "Breathtaking Views and Unmatched Luxury at Hotel Ashirwad"
   },
   {
     id: 3,
-    image: "/assets/images/main-slider/banner-3.jpg",
+    image: "/assets/images/compressed/banner-3.jpg",
     title: "Indulge in Unmatched Luxury",
-    subtitle: "Summer Vacations",
+    subtitle: "Convenient Base for Bhimashankar",
     description: "Escape the Ordinary: Experience Premium Comfort at Hotel Ashirwad"
-  },
-  {
-    id: 4,
-    image: "/assets/images/main-slider/banner-4.jpg",
-    title: "Stay, Relax, Rejuvenate",
-    subtitle: "Summer Vacations",
-    description: "Your Perfect Getaway Awaits: Hotel Ashirwad"
-  },
-  {
-    id: 5,
-    image: "/assets/images/main-slider/banner-5.jpg",
-    title: "Luxury Hotel For Vacation",
-    subtitle: "Summer Vacations",
-    description: "Relax in Style: Hotel Ashirwad – Where Luxury Meets Tranquility"
   }
 ];
 
 export default function NewBanner() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
   const swiperRef = useRef(null);
 
-  // Animation function
-  const animateSlide = (slideIndex) => {
-    setIsAnimating(true);
-    setCurrentSlide(slideIndex);
-    
-    // Reset animation after a short delay
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 1000);
-  };
-
-  // Typing effect
-  const typeText = (element, text, speed = 100) => {
-    if (!element) return;
-    
-    element.textContent = '';
-    element.classList.add('typing');
-    
-    let i = 0;
-    const type = () => {
-      if (i < text.length) {
-        element.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, speed);
-      } else {
-        element.classList.remove('typing');
-      }
-    };
-    
-    setTimeout(type, 500);
-  };
+  // No text animation – content is always visible
 
   // Create particles
   const createParticles = () => {
@@ -92,17 +46,20 @@ export default function NewBanner() {
     
     container.innerHTML = '';
     
-    for (let i = 0; i < 20; i++) {
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const count = isMobile ? 6 : 12;
+    for (let i = 0; i < count; i++) {
       const particle = document.createElement('div');
       particle.className = 'particle';
       particle.style.left = Math.random() * 100 + '%';
       particle.style.animationDelay = Math.random() * 10 + 's';
-      particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+      particle.style.animationDuration = (Math.random() * 10 + 18) + 's';
       container.appendChild(particle);
     }
   };
 
   useEffect(() => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     // Add CSS
     const style = document.createElement('style');
     style.id = 'new-banner-styles';
@@ -141,7 +98,7 @@ export default function NewBanner() {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 70%);
         z-index: 2;
       }
       
@@ -151,14 +108,9 @@ export default function NewBanner() {
         text-align: center;
         max-width: 800px;
         padding: 40px 20px;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s ease-out;
-      }
-      
-      .new-banner .content.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+        transition: none;
       }
       
       .new-banner .subtitle {
@@ -168,14 +120,9 @@ export default function NewBanner() {
         margin-bottom: 20px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      
-      .new-banner .subtitle.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+        transition: none;
       }
       
       .new-banner .title {
@@ -185,14 +132,9 @@ export default function NewBanner() {
         line-height: 1.2;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         color: white;
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      
-      .new-banner .title.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+        transition: none;
       }
       
       .new-banner .description {
@@ -200,25 +142,15 @@ export default function NewBanner() {
         margin-bottom: 40px;
         color: rgba(255,255,255,0.9);
         line-height: 1.6;
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      
-      .new-banner .description.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+        transition: none;
       }
       
       .new-banner .btn-container {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      
-      .new-banner .btn-container.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+        transition: none;
       }
       
       .new-banner .btn-1 {
@@ -258,15 +190,7 @@ export default function NewBanner() {
         left: 100%;
       }
       
-      .new-banner .typing {
-        border-right: 2px solid #b30000;
-        animation: blink 1s infinite;
-      }
-      
-      @keyframes blink {
-        0%, 50% { border-color: #b30000; }
-        51%, 100% { border-color: transparent; }
-      }
+      /* typing effect removed */
       
       .new-banner .particle-container {
         position: absolute;
@@ -350,6 +274,18 @@ export default function NewBanner() {
           font-size: 14px;
         }
       }
+      @media (prefers-reduced-motion: reduce) {
+        .new-banner .content,
+        .new-banner .subtitle,
+        .new-banner .title,
+        .new-banner .description,
+        .new-banner .btn-container {
+          transition: none !important;
+          transform: none !important;
+          opacity: 1 !important;
+        }
+        .new-banner .particle { display: none !important; }
+      }
     `;
     
     if (!document.getElementById('new-banner-styles')) {
@@ -357,7 +293,7 @@ export default function NewBanner() {
     }
 
     // Initialize particles
-    createParticles();
+    if (!reduceMotion) createParticles();
 
     return () => {
       if (style.parentNode) {
@@ -367,40 +303,17 @@ export default function NewBanner() {
   }, []);
 
   // Handle slide change
-  const handleSlideChange = (swiper) => {
-    const activeIndex = swiper.activeIndex;
-    animateSlide(activeIndex);
+  const handleSlideChange = () => {
     createParticles();
-    
-    // Trigger typing effect for title
-    setTimeout(() => {
-      const titleElement = document.querySelector('.new-banner .title.animate');
-      if (titleElement) {
-        typeText(titleElement, slides[activeIndex].title);
-      }
-    }, 500);
   };
 
   // Initialize first slide
   useEffect(() => {
-    const timer = setTimeout(() => {
-      animateSlide(0);
-      createParticles();
-      
-      // Trigger typing effect for first slide
-      setTimeout(() => {
-        const titleElement = document.querySelector('.new-banner .title.animate');
-        if (titleElement) {
-          typeText(titleElement, slides[0].title);
-        }
-      }, 1000);
-    }, 500);
-
-    return () => clearTimeout(timer);
+    createParticles();
   }, []);
 
   return (
-    <section className="new-banner">
+    <section className="new-banner" role="region" aria-label="Hotel Ashirwad promotional banner">
       <div className="particle-container"></div>
       
       <Swiper
@@ -425,6 +338,8 @@ export default function NewBanner() {
         onSlideChange={handleSlideChange}
         className="banner-swiper"
         ref={swiperRef}
+        aria-roledescription="carousel"
+        aria-live="polite"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
@@ -432,26 +347,27 @@ export default function NewBanner() {
               <div className="image-container">
                 <Image
                   src={slide.image}
-                  alt={slide.title}
+                  alt={`${slide.title} – Hotel Ashirwad, Ghodegaon near Manchar and Bhimashankar`}
                   fill
                   style={{ objectFit: 'cover' }}
                   priority={index === 0}
                   quality={90}
+                  sizes="100vw"
                 />
               </div>
               <div className="image-overlay"></div>
               
-              <div className={`content ${isAnimating ? 'animate' : ''}`}>
-                <h4 className={`subtitle ${isAnimating ? 'animate' : ''}`}>
+              <div className={`content`}>
+                <h4 className={`subtitle`}>
                   {slide.subtitle}
                 </h4>
-                <h2 className={`title ${isAnimating ? 'animate' : ''}`}>
+                <h2 className={`title`}>
                   {slide.title}
                 </h2>
-                <p className={`description ${isAnimating ? 'animate' : ''}`}>
+                <p className={`description`}>
                   {slide.description}
                 </p>
-                <div className={`btn-container ${isAnimating ? 'animate' : ''}`}>
+                <div className={`btn-container`}>
                   <Link href="/room" className="btn-1">
                     Book Room
                   </Link>

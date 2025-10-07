@@ -12,10 +12,7 @@ export default function Features() {
                     <span className="section_heading_title_small animate-child" style={{ opacity: 1, transform: 'none' }}>Exclusive Offers</span>
                     <h3 className="section_heading_title_big animate-child" style={{ opacity: 1, transform: 'none' }}>Featured Special <br /> Offers</h3>
                     </div>
-                    {/* Debug: Features component is rendering */}
-                    <div style={{ color: 'red', textAlign: 'center', marginBottom: '20px' }}>
-                        DEBUG: Features component is rendering
-                    </div>
+                    
                     <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block scroll-animate card-hover" data-wow-delay=".2s" data-wow-duration=".8s" style={{ opacity: 1, transform: 'none' }}>
