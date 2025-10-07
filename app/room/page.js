@@ -4,6 +4,7 @@ import Link from "next/link"
 import styles from "./room.module.scss";
 import RoomCard from "./RoomCard";
 import React from "react";
+import Head from "next/head";
 const roomData = [
   {
     imageSrc: "/assets/images/compressed/room14.jpg",
@@ -73,6 +74,38 @@ function getDiscountPercent(oldPrice, newPrice) {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Rooms in Ghodegaon Pune | Near Manchar & Bhimashankar</title>
+        <meta name="description" content="Premium rooms at Ashirwad Hotel in Ghodegaon, Pune. Convenient stay near Manchar and close to Bhimashankar Temple. Pure Veg, family-friendly amenities." />
+        <meta name="keywords" content="Rooms in Ghodegaon, hotel near Manchar, stay near Bhimashankar, Ghodegaon Pune hotel, lodging Ghodegaon" />
+        <link rel="canonical" href="https://hotelashirwadlodging.com/room" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Hotel",
+              name: "Ashirwad Hotel",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Bhimashankar Road, Ambegaon",
+                addressLocality: "Ghodegaon",
+                addressRegion: "Maharashtra",
+                postalCode: "412408",
+                addressCountry: "IN"
+              },
+              url: "https://hotelashirwadlodging.com/room",
+              description: "Rooms in Ghodegaon, Pune – near Manchar and Bhimashankar.",
+              amenityFeature: [
+                { "@type": "LocationFeatureSpecification", name: "Free Wi‑Fi", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Air Conditioning", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Room Service", value: true }
+              ],
+              areaServed: ["Ghodegaon", "Manchar", "Bhimashankar"],
+            })
+          }}
+        />
+      </Head>
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Room Style">
         <main role="main" className={styles.pageContainer}>
           <section 
@@ -87,7 +120,8 @@ export default function Home() {
                 </h1>
                 <div className={styles.sectionDivider} aria-hidden="true"></div>
                 <p className={styles.sectionSubtitle}>
-                  Discover comfort and luxury in every room. Choose the perfect stay for your visit.
+                  Premium hotel rooms in <strong>Ghodegaon, Pune</strong>, ideally located on the Pune–Nashik highway,
+                  <strong> near Manchar</strong> and a convenient base for visitors to <strong>Bhimashankar</strong>.
                 </p>
                 <div className={styles.statsContainer}>
                   <div className={styles.statItem}>
@@ -103,6 +137,19 @@ export default function Home() {
                     <span className={styles.statLabel}>Happy Guests</span>
                   </div>
                 </div>
+                <address style={{
+                  margin: '12px auto 0',
+                  maxWidth: 720,
+                  background: '#ffffff',
+                  border: '1px solid rgba(15,23,42,0.06)',
+                  borderRadius: '12px',
+                  padding: '12px 16px',
+                  color: '#334155',
+                  lineHeight: 1.5
+                }}>
+                  <strong>Hotel Ashirwad</strong>, Ghodegaon, near Manchar, near Bhimashankar<br/>
+                  Bhimashankar Road, Ambegaon, Maharashtra 412408
+                </address>
               </header>
               
               <div className={styles.roomGridModern} role="grid" aria-label="Available rooms">
