@@ -29,7 +29,7 @@ export default function RoomCard({ room, index }) {
       : null;
 
   const initialSrc = useMemo(() => {
-    if (!room?.imageSrc) return "/assets/images/compressed/sideEntrance1.jpg";
+    if (!room?.imageSrc) return "/assets/Rooms/roomEntrance.jpeg";
     return room.imageSrc.startsWith("/") ? room.imageSrc : `/${room.imageSrc}`;
   }, [room?.imageSrc]);
 
@@ -52,8 +52,8 @@ export default function RoomCard({ room, index }) {
           itemProp="image"
           onLoad={() => setImageLoaded(true)}
           onError={() => {
-            if (imgSrc !== "/assets/images/compressed/sideEntrance1.jpg") {
-              setImgSrc("/assets/images/compressed/sideEntrance1.jpg");
+            if (imgSrc !== "/assets/Rooms/roomEntrance.jpeg") {
+              setImgSrc("/assets/Rooms/roomEntrance.jpeg");
             }
           }}
         />

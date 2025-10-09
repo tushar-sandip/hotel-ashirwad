@@ -7,10 +7,10 @@ export default function Offer() {
             <div className="col-lg-6">
               <div className="p_relative">
                 <div className="offer-1-shape-1">
-                  <img src="assets/images/shape/pattern-1.png" alt="" />
+                  <img src="/assets/images/shape/pattern-1.png" alt="" />
                 </div>
                 <div className="offer-1-image hvr-img-zoom-1 mb_30">
-                  <img src="assets/images/resource/welcome1.jpg" alt="" />
+                  <img src="/assets/Dining/fr_as7.jpeg" alt="Hotel Ashirwad exterior view" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -38,10 +38,10 @@ export default function Offer() {
             <div className="col-lg-8 order-lg-2">
               <div className="p_relative">
                 <div className="offer-1-shape-2">
-                  <img src="assets/images/shape/pattern-1.png" alt="" />
+                  <img src="/assets/images/shape/pattern-1.png" alt="" />
                 </div>
                 <div className="offer-1-image text-lg-end  hvr-img-zoom-1 mb_30">
-                  <img src="assets/images/resource/feature.jpg" alt="" />
+                  <img src="/assets/Dining/fr_as4.jpeg" alt="" />
                 </div>
               </div>
             </div>

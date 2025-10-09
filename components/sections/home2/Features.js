@@ -16,7 +16,7 @@ export default function Features() {
                     <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block scroll-animate card-hover" data-wow-delay=".2s" data-wow-duration=".8s" style={{ opacity: 1, transform: 'none' }}>
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image.jpg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="/assets/Dining/dining1.jpeg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
                             <h4 className="feature-2-title mb_20">Kick off Summer  <br />  Hotel Ashirwad</h4>
@@ -26,7 +26,7 @@ export default function Features() {
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block scroll-animate card-hover animate-delay-2" data-wow-delay=".2s" data-wow-duration=".8s" style={{ opacity: 1, transform: 'none' }}>
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-2.jpg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="/assets/Dining/dining4.jpeg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
                             <h4 className="feature-2-title mb_20">Free Breakfast <br /> Packages</h4>
@@ -36,7 +36,7 @@ export default function Features() {
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="feature-2-block scroll-animate card-hover animate-delay-4" data-wow-delay=".2s" data-wow-duration=".8s" style={{ opacity: 1, transform: 'none' }}>
-                        <div className="feature-2-image hvr-img-zoom-1"><img src="assets/images/resource/feature-image-3.jpg" alt="" /></div>
+                        <div className="feature-2-image hvr-img-zoom-1"><img src="/assets/Dining/dining3.jpeg" alt="" /></div>
                         <div className="feature-2-lower-content">
                             <div className="feature-2-offer w_80 h_80 theme-bg p_absolute r_40 t_0 fs_18 text-center text-light pt_20 b_radius_50 lh_20"><span className="fs_22 fw_medium">15%</span><br /> OFF</div>
                             <h4 className="feature-2-title mb_20">The Signature <br /> Collection</h4>

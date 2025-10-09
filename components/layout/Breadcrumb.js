@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Breadcrumb({ breadcrumbTitle }) {
     return (
         <>
-            <div className="page-title" style={{ backgroundImage: "url(assets/images/background/page-title.jpg)" }}>
+            <div className="page-title" style={{ backgroundImage: "url(/assets/images/background/page-title.jpg)" }}>
                 <div className="auto-container">
                     <h1>{breadcrumbTitle || "Rooms"}</h1>
                 </div>

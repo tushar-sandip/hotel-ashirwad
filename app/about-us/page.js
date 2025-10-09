@@ -3,7 +3,6 @@ import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState, useRef } from 'react'
-import ModalVideo from 'react-modal-video'
 import TestimonialSlider7 from '@/components/slider/TestimonialSlider7'
 
 
@@ -58,7 +57,7 @@ export default function Home() {
                             </div>
                             <div className="col-lg-6 animate-slide-in-right">
                                 <div className="about-image-wrap position-relative rounded overflow-hidden shadow-lg">
-                                    <img src="/assets/images/resource/sideEntrance1.jpg" alt="Hotel Entrance" className="img-fluid rounded" />
+                                    <img src="/assets/Dining/partyhall.jpeg" alt="Hotel Ashirwad Party Hall" className="img-fluid rounded" loading="lazy" />
                                     <div className="about-video-btn position-absolute top-50 start-50 translate-middle">
                                         <button className="video-btn" onClick={() => setOpen(true)}><i className="fas fa-play"></i></button>
                                     </div>
@@ -204,17 +203,17 @@ export default function Home() {
                         <div className="row g-4 justify-content-center">
                             {[
                                 {
-                                    img: "/assets/images/resource/feature-image.jpg",
+                                    img: "/assets/Dining/dining1.jpeg",
                                     title: "Kick off Summer  Hotel Ashirwad",
                                     desc: "Celebrate the season with a refreshing summer stay at Hotel Ashirwad. Relax in luxury, explore the natural beauty of Ambegaon, and enjoy the perfect escape from the everyday hustle.",
                                 },
                                 {
-                                    img: "/assets/images/resource/feature-image-2.jpg",
+                                    img: "/assets/Dining/dining4.jpeg",
                                     title: "Free Breakfast Packages",
                                     desc: "Start your day right with our Free Breakfast Packages! Enjoy a delicious, complimentary breakfast each morning during your stay at Hotel Ashirwad, making your experience even more enjoyable.",
                                 },
                                 {
-                                    img: "/assets/images/resource/feature-image-3.jpg",
+                                    img: "/assets/Dining/dining3.jpeg",
                                     title: "The Signature Collection",
                                     desc: "Indulge in our Signature Collection at Hotel Ashirwad. Experience the epitome of luxury with exclusive rooms, premium amenities, and personalized service that elevate your stay to new heights.",
                                 },
@@ -236,8 +235,14 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Video Modal */}
-                <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
+                {/* Local MP4 Video Modal */}
+                {isOpen && (
+                    <div className="video-modal-overlay" onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1050 }}>
+                        <div className="video-modal-container" onClick={(e) => e.stopPropagation()} style={{ width: '90%', maxWidth: 960, aspectRatio: '16 / 9', background: '#000', borderRadius: 12, overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }}>
+                            <video src="/assets/Rooms/as2.mp4" controls autoPlay playsInline style={{ width: '100%', height: '100%', display: 'block' }} />
+                        </div>
+                    </div>
+                )}
             </Layout>
            
             <style jsx global>{`

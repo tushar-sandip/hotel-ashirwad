@@ -6,16 +6,24 @@ export default function Video() {
             <section className="video-section-modern">
                 {/* Enhanced Background with Multiple Layers */}
                 <div className="video-bg-modern">
-                    <div 
-                        className="video-bg-image" 
+                    <video 
+                        className="video-bg-image"
+                        poster="/assets/Dining/fr_as2.jpeg"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
                         style={{ 
-                            backgroundImage: 'url(assets/images/background/abouthotel.jpg)',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat'
-                        }} 
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
                         data-parallax='{"y": 50}'
-                    ></div>
+                    >
+                        <source src="/assets/Rooms/as1.mp4" type="video/mp4" />
+                        <source src="/assets/Rooms/as2.mp4" type="video/mp4" />
+                    </video>
                     
                     {/* Gradient Overlays */}
                     <div className="video-gradient-overlay-1"></div>

@@ -19,16 +19,18 @@ export default function About() {
                     </div>
                     <div className="col-lg-6 ps-lg-5">
                         <div className="about-2-image-wrap mb_30 p_relative">
-                        <div className="about-2-shape-1"><img src="assets/images/shape/pattern-1.png" alt="" /></div>
-                        <div className="about-2-image-1" data-parallax='{"y": -20}'><img src="assets/images/resource/sideEntrance1.jpg" width={380} height={150} alt="" /></div>
-                        <div className="about-2-image-2" data-parallax='{"y": 20}'><img src="assets/images/resource/sideEntrance2.jpg" width={190} height={250} alt="" /></div>
+                        <div className="about-2-shape-1"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
+                        <div className="about-2-image-1" data-parallax='{"y": -20}'><img src="/assets/Dining/partyhall.jpeg" width={380} height={150} alt="Party Hall at Hotel Ashirwad" loading="lazy" /></div>
+                        <div className="about-2-image-2" data-parallax='{"y": 20}'><img src="/assets/Dining/dining5.jpeg" width={190} height={250} alt="Dining area at Hotel Ashirwad" loading="lazy" /></div>
                         <div className="about-2-video-area">
                             <div className="about-2-video-btn">
                                 <div className="video-btn">
                                         <VideoPopup />
                                 </div>
                             </div>
-                            <p className="about-2-video-title">Watch Exclusive <br /> Video</p>
+                            <p className="about-2-video-title">
+                                <VideoPopup>Watch Exclusive Video</VideoPopup>
+                            </p>
                         </div>
                         </div>
                     </div>
@@ -39,3 +41,5 @@ export default function About() {
         </>
     )
 }
+
+

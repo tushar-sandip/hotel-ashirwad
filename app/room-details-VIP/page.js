@@ -21,22 +21,10 @@ export default function Home() {
 
   // Sample images for gallery
   const images = [
-    {
-      original: "/assets/images/gallery/room4.jpg",
-      thumbnail: "/assets/images/gallery/room4.jpg",
-    },
-    {
-      original: "/assets/images/gallery/room2.jpg",
-      thumbnail: "/assets/images/gallery/room2.jpg",
-    },
-    {
-      original: "/assets/images/gallery/room3.jpg",
-      thumbnail: "/assets/images/gallery/room3.jpg",
-    },
-    {
-      original: "/assets/images/gallery/room11.jpg",
-      thumbnail: "/assets/images/gallery/room11.jpg",
-    },
+    { original: "/assets/Rooms/room10.jpeg", thumbnail: "/assets/Rooms/room10.jpeg" },
+    { original: "/assets/Rooms/room4.jpeg", thumbnail: "/assets/Rooms/room4.jpeg" },
+    { original: "/assets/Rooms/room3.jpeg", thumbnail: "/assets/Rooms/room3.jpeg" },
+    { original: "/assets/Rooms/room11.jpeg", thumbnail: "/assets/Rooms/room11.jpeg" },
   ];
 
   // Dynamically import PhotoSphereViewer for 360 view (client-side only)
@@ -329,7 +317,7 @@ export default function Home() {
                     data-wow-duration=".8s"
                   >
                     <div className="room-1-image hvr-img-zoom-1">
-                      <img src="assets/images/gallery/room2.jpg" alt="" />
+                      <img src="/assets/Rooms/room4.jpeg" alt="" />
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">
@@ -365,7 +353,7 @@ export default function Home() {
                     data-wow-duration="1.2s"
                   >
                     <div className="room-1-image hvr-img-zoom-1">
-                      <img src="assets/images/gallery/room3.jpg" alt="" />
+                      <img src="/assets/Rooms/room3.jpeg" alt="" />
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">
@@ -401,7 +389,7 @@ export default function Home() {
                     data-wow-duration="1.5s"
                   >
                     <div className="room-1-image hvr-img-zoom-1">
-                      <img src="assets/images/gallery/room4.jpg" alt="" />
+                      <img src="/assets/Rooms/room10.jpeg" alt="" />
                     </div>
                     <div className="room-1-content">
                       <p className="room-1-meta-info">

@@ -7,7 +7,7 @@ import React from "react";
 import Head from "next/head";
 const roomData = [
   {
-    imageSrc: "/assets/images/compressed/room14.jpg",
+    imageSrc: "/assets/Rooms/room4.jpeg",
     startingPrice: "3700.0",
     rating: 5,
     title: "Luxury Double Bed Room",
@@ -21,7 +21,7 @@ const roomData = [
     reviews: 32,
   },
   {
-    imageSrc: "/assets/images/compressed/room9.jpg",
+    imageSrc: "/assets/Rooms/room5.jpeg",
     startingPrice: "3700.0",
     rating: 5,
     title: "VIP Single Bed Room",
@@ -35,7 +35,7 @@ const roomData = [
     reviews: 15,
   },
   {
-    imageSrc: "/assets/images/compressed/room11.jpg",
+    imageSrc: "/assets/Rooms/room7.jpeg",
     startingPrice: "3200.0",
     rating: 5,
     title: "Delux Single Bed Room",
@@ -49,7 +49,7 @@ const roomData = [
     reviews: 28,
   },
   {
-    imageSrc: "/assets/images/compressed/room13.jpg",
+    imageSrc: "/assets/Rooms/room6.jpeg",
     startingPrice: "2700.0",
     rating: 5,
     title: "Single Bed Room",
