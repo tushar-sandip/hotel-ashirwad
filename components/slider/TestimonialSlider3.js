@@ -57,7 +57,7 @@ export default function TestimonialSlider3() {
         <>
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room11.jpeg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room1.jpeg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details-luxury">Luxury Double Bed Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹3700.0</span>/night</p>
@@ -78,7 +78,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room12.jpeg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room4.jpeg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details-VIP">VIP Single Bed Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹3700.0</span>/night</p>
@@ -99,7 +99,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room9.jpeg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room7.jpeg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details-delux">Delux Single Bed Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹3200.0</span>/night</p>
@@ -120,7 +120,7 @@ export default function TestimonialSlider3() {
                             </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
-                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room10.jpeg)" }}>
+                <div className="room-2-block wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s" style={{ backgroundImage: "url(/assets/Rooms/room9.jpeg)" }}>
                                 <div className="room-2-content">
                                 <h4 className="room-2-title mb_4"><Link href="/room-details-single">Single Bed Room</Link></h4>
                                 <p className="room-2-meta-info">Start from <span className="theme-color">₹2700.0</span>/night</p>
